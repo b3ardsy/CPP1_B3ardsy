@@ -1,6 +1,8 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
+
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
@@ -8,20 +10,25 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
         bool jumpInput = Input.GetButtonDown("Jump");
 
         // Move player
         rb.linearVelocityX = horizontalInput * moveSpeed;
+
+        // Send movement to Animator
+        animator.SetFloat("moveValue", Mathf.Abs(horizontalInput));
 
         // Flip sprite
         if (horizontalInput > 0.01f)
