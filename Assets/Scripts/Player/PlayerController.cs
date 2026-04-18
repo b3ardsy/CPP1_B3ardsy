@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocityX = horizontalInput * moveSpeed;
 
         // Send movement to Animator
-        animator.SetFloat("moveValue", Mathf.Abs(horizontalInput));
+        animator.SetFloat("xVelocity", Mathf.Abs(horizontalInput));
 
         // Flip sprite
         if (horizontalInput > 0.01f)
