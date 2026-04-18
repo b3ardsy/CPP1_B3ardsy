@@ -550,7 +550,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BH-CrosBow_0
+      name: PBOW_Idle1
       rect:
         serializedVersion: 2
         x: 0
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_1
+      name: PBOW_Idle2
       rect:
         serializedVersion: 2
         x: 73
@@ -594,7 +594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_2
+      name: PBOW_Idle3
       rect:
         serializedVersion: 2
         x: 146
@@ -616,7 +616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_3
+      name: PBOW_Idle4
       rect:
         serializedVersion: 2
         x: 219
@@ -638,7 +638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_4
+      name: PBOW_Idle5
       rect:
         serializedVersion: 2
         x: 292
@@ -660,7 +660,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_5
+      name: PBOW_Idle6
       rect:
         serializedVersion: 2
         x: 365
@@ -682,7 +682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_6
+      name: PBOW_Idle7
       rect:
         serializedVersion: 2
         x: 438
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_7
+      name: PBOW_Idle8
       rect:
         serializedVersion: 2
         x: 511
@@ -726,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_8
+      name: PBOW_Idle_Aim1
       rect:
         serializedVersion: 2
         x: 0
@@ -748,7 +748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_9
+      name: PBOW_Idle_Aim2
       rect:
         serializedVersion: 2
         x: 73
@@ -770,7 +770,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_10
+      name: PBOW_Idle_Aim3
       rect:
         serializedVersion: 2
         x: 146
@@ -792,7 +792,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_11
+      name: PBOW_Idle_Aim4
       rect:
         serializedVersion: 2
         x: 219
@@ -814,7 +814,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_12
+      name: PBOW_Idle_Aim5
       rect:
         serializedVersion: 2
         x: 292
@@ -836,7 +836,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_13
+      name: PBOW_Idle_Aim6
       rect:
         serializedVersion: 2
         x: 365
@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_14
+      name: PBOW_Idle_Aim7
       rect:
         serializedVersion: 2
         x: 438
@@ -880,7 +880,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_15
+      name: PBOW_Idle_Aim8
       rect:
         serializedVersion: 2
         x: 511
@@ -902,7 +902,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_16
+      name: PBOW_Run1
       rect:
         serializedVersion: 2
         x: 0
@@ -924,7 +924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_17
+      name: PBOW_Run2
       rect:
         serializedVersion: 2
         x: 73
@@ -946,7 +946,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_18
+      name: PBOW_Run3
       rect:
         serializedVersion: 2
         x: 146
@@ -968,7 +968,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_19
+      name: PBOW_Run4
       rect:
         serializedVersion: 2
         x: 219
@@ -990,7 +990,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_20
+      name: PBOW_Run5
       rect:
         serializedVersion: 2
         x: 292
@@ -1012,7 +1012,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_21
+      name: PBOW_Run6
       rect:
         serializedVersion: 2
         x: 365
@@ -1034,7 +1034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_22
+      name: PBOW_Run7
       rect:
         serializedVersion: 2
         x: 438
@@ -1056,7 +1056,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_23
+      name: PBOW_Run8
       rect:
         serializedVersion: 2
         x: 511
@@ -1078,7 +1078,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_24
+      name: PBOW_Run_Aim1
       rect:
         serializedVersion: 2
         x: 0
@@ -1100,7 +1100,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_25
+      name: PBOW_Run_Aim2
       rect:
         serializedVersion: 2
         x: 73
@@ -1122,7 +1122,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_26
+      name: PBOW_Run_Aim3
       rect:
         serializedVersion: 2
         x: 146
@@ -1144,7 +1144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_27
+      name: PBOW_Run_Aim4
       rect:
         serializedVersion: 2
         x: 219
@@ -1166,7 +1166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_28
+      name: PBOW_Run_Aim5
       rect:
         serializedVersion: 2
         x: 292
@@ -1188,7 +1188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_29
+      name: PBOW_Run_Aim6
       rect:
         serializedVersion: 2
         x: 365
@@ -1210,7 +1210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_30
+      name: PBOW_Run_Aim7
       rect:
         serializedVersion: 2
         x: 438
@@ -1232,7 +1232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_31
+      name: PBOW_Run_Aim8
       rect:
         serializedVersion: 2
         x: 511
@@ -1254,7 +1254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_32
+      name: PBOW_Jump1
       rect:
         serializedVersion: 2
         x: 0
@@ -1276,7 +1276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_33
+      name: PBOW_Jump2
       rect:
         serializedVersion: 2
         x: 73
@@ -1298,7 +1298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_34
+      name: PBOW_Jump3
       rect:
         serializedVersion: 2
         x: 146
@@ -1320,7 +1320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_35
+      name: PBOW_Jump4
       rect:
         serializedVersion: 2
         x: 219
@@ -1342,7 +1342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_36
+      name: PBOW_Fall1
       rect:
         serializedVersion: 2
         x: 0
@@ -1364,7 +1364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_37
+      name: PBOW_Fall2
       rect:
         serializedVersion: 2
         x: 73
@@ -1386,7 +1386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_38
+      name: PBOW_Fall3
       rect:
         serializedVersion: 2
         x: 146
@@ -1408,7 +1408,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_39
+      name: PBOW_Hurt1
       rect:
         serializedVersion: 2
         x: 0
@@ -1430,7 +1430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_40
+      name: PBOW_Hurt2
       rect:
         serializedVersion: 2
         x: 73
@@ -1452,7 +1452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_41
+      name: PBOW_Hurt3
       rect:
         serializedVersion: 2
         x: 146
@@ -1474,7 +1474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_42
+      name: PBOW_Hurt_Air1
       rect:
         serializedVersion: 2
         x: 0
@@ -1496,7 +1496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_43
+      name: PBOW_Hurt_Air2
       rect:
         serializedVersion: 2
         x: 73
@@ -1518,7 +1518,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_44
+      name: PBOW_Hurt_Air3
       rect:
         serializedVersion: 2
         x: 146
@@ -1540,7 +1540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_45
+      name: PBOW_Death_Fall1
       rect:
         serializedVersion: 2
         x: 0
@@ -1562,7 +1562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_46
+      name: PBOW_Death_Fall2
       rect:
         serializedVersion: 2
         x: 73
@@ -1584,7 +1584,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_47
+      name: PBOW_Death_Fall3
       rect:
         serializedVersion: 2
         x: 146
@@ -1606,7 +1606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_48
+      name: PBOW_Death1
       rect:
         serializedVersion: 2
         x: 0
@@ -1628,7 +1628,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_49
+      name: PBOW_Death2
       rect:
         serializedVersion: 2
         x: 73
@@ -1650,7 +1650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_50
+      name: PBOW_Death3
       rect:
         serializedVersion: 2
         x: 146
@@ -1672,7 +1672,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_51
+      name: PBOW_Death4
       rect:
         serializedVersion: 2
         x: 219
@@ -1694,7 +1694,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_52
+      name: PBOW_Death5
       rect:
         serializedVersion: 2
         x: 292
@@ -1716,7 +1716,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_53
+      name: PBOW_Death6
       rect:
         serializedVersion: 2
         x: 365
@@ -1738,7 +1738,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_54
+      name: PBOW_Death7
       rect:
         serializedVersion: 2
         x: 438
@@ -1760,7 +1760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_55
+      name: PBOW_Jump_Shoot1
       rect:
         serializedVersion: 2
         x: 0
@@ -1782,7 +1782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_56
+      name: PBOW_Jump_Shoot2
       rect:
         serializedVersion: 2
         x: 73
@@ -1804,7 +1804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_57
+      name: PBOW_Jump_Shoot3
       rect:
         serializedVersion: 2
         x: 146
@@ -1826,7 +1826,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_58
+      name: PBOW_Fall_Shoot1
       rect:
         serializedVersion: 2
         x: 0
@@ -1848,7 +1848,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_59
+      name: PBOW_Fall_Shoot2
       rect:
         serializedVersion: 2
         x: 73
@@ -1870,7 +1870,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_60
+      name: PBOW_Fall_Shoot3
       rect:
         serializedVersion: 2
         x: 146
@@ -1892,7 +1892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_61
+      name: PBOW_Jump_Aim1
       rect:
         serializedVersion: 2
         x: 0
@@ -1914,7 +1914,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_62
+      name: PBOW_Jump_Aim2
       rect:
         serializedVersion: 2
         x: 73
@@ -1936,7 +1936,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_63
+      name: PBOW_Jump_Aim3
       rect:
         serializedVersion: 2
         x: 146
@@ -1958,7 +1958,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_64
+      name: PBOW_Fall_Aim1
       rect:
         serializedVersion: 2
         x: 0
@@ -1980,7 +1980,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_65
+      name: PBOW_Fall_Aim2
       rect:
         serializedVersion: 2
         x: 73
@@ -2002,7 +2002,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_66
+      name: PBOW_Fall_Aim3
       rect:
         serializedVersion: 2
         x: 146
@@ -2024,7 +2024,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_67
+      name: PBOW_Shoot1
       rect:
         serializedVersion: 2
         x: 0
@@ -2046,7 +2046,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_68
+      name: PBOW_Shoot2
       rect:
         serializedVersion: 2
         x: 73
@@ -2068,7 +2068,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_69
+      name: PBOW_Shoot3
       rect:
         serializedVersion: 2
         x: 146
@@ -2090,7 +2090,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_70
+      name: PBOW_Shoot_Crouch1
       rect:
         serializedVersion: 2
         x: 0
@@ -2112,7 +2112,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_71
+      name: PBOW_Shoot_Crouch2
       rect:
         serializedVersion: 2
         x: 73
@@ -2134,7 +2134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_72
+      name: PBOW_Shoot_Crouch3
       rect:
         serializedVersion: 2
         x: 146
@@ -2156,7 +2156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_73
+      name: PBOW_Crouch1
       rect:
         serializedVersion: 2
         x: 0
@@ -2178,7 +2178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_74
+      name: PBOW_Crouch2
       rect:
         serializedVersion: 2
         x: 73
@@ -2200,7 +2200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_75
+      name: PBOW_Crouch3
       rect:
         serializedVersion: 2
         x: 146
@@ -2222,7 +2222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_76
+      name: PBOW_Crouch4
       rect:
         serializedVersion: 2
         x: 219
@@ -2244,7 +2244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_77
+      name: PBOW_Crouch5
       rect:
         serializedVersion: 2
         x: 292
@@ -2266,7 +2266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_78
+      name: PBOW_Crouch_Aim1
       rect:
         serializedVersion: 2
         x: 0
@@ -2288,7 +2288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_79
+      name: PBOW_Crouch_Aim2
       rect:
         serializedVersion: 2
         x: 73
@@ -2310,7 +2310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_80
+      name: PBOW_Crouch_Aim3
       rect:
         serializedVersion: 2
         x: 146
@@ -2332,7 +2332,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_81
+      name: PBOW_Crouch_Aim4
       rect:
         serializedVersion: 2
         x: 219
@@ -2354,7 +2354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_82
+      name: PBOW_Crouch_Aim5
       rect:
         serializedVersion: 2
         x: 292
@@ -2376,7 +2376,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_83
+      name: PBOW_Dash1
       rect:
         serializedVersion: 2
         x: 0
@@ -2398,7 +2398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_84
+      name: PBOW_Dash2
       rect:
         serializedVersion: 2
         x: 73
@@ -2420,7 +2420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_85
+      name: PBOW_Dash3
       rect:
         serializedVersion: 2
         x: 146
@@ -2442,7 +2442,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_86
+      name: PBOW_Dash4
       rect:
         serializedVersion: 2
         x: 219
@@ -2464,7 +2464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_87
+      name: PBOW_Dash5
       rect:
         serializedVersion: 2
         x: 292
@@ -2486,7 +2486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_88
+      name: PBOW_Dash6
       rect:
         serializedVersion: 2
         x: 365
@@ -2508,7 +2508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_89
+      name: PBOW_Dash7
       rect:
         serializedVersion: 2
         x: 438
@@ -2530,7 +2530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_90
+      name: PBOW_Wallslide1
       rect:
         serializedVersion: 2
         x: 0
@@ -2552,7 +2552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_91
+      name: PBOW_Wallslide2
       rect:
         serializedVersion: 2
         x: 73
@@ -2574,7 +2574,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_92
+      name: PBOW_Wallslide3
       rect:
         serializedVersion: 2
         x: 146
@@ -2596,7 +2596,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_93
+      name: PBOW_Ledge_Grab1
       rect:
         serializedVersion: 2
         x: 0
@@ -2618,7 +2618,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_94
+      name: PBOW_Ledge_Grab2
       rect:
         serializedVersion: 2
         x: 73
@@ -2640,7 +2640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_95
+      name: PBOW_Ledge_Grab3
       rect:
         serializedVersion: 2
         x: 146
@@ -2662,7 +2662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_96
+      name: PBOW_Ledge_Grab4
       rect:
         serializedVersion: 2
         x: 219
@@ -2684,7 +2684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_97
+      name: PBOW_Ledge_Climb1
       rect:
         serializedVersion: 2
         x: 0
@@ -2706,7 +2706,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_98
+      name: PBOW_Ledge_Climb2
       rect:
         serializedVersion: 2
         x: 73
@@ -2728,7 +2728,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_99
+      name: PBOW_Ledge_Climb3
       rect:
         serializedVersion: 2
         x: 146
@@ -2750,7 +2750,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_100
+      name: PBOW_Slide1
       rect:
         serializedVersion: 2
         x: 0
@@ -2772,7 +2772,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_101
+      name: PBOW_Slide2
       rect:
         serializedVersion: 2
         x: 73
@@ -2794,7 +2794,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_102
+      name: PBOW_Slide3
       rect:
         serializedVersion: 2
         x: 146
@@ -2816,7 +2816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_103
+      name: PBOW_Slide4
       rect:
         serializedVersion: 2
         x: 219
@@ -2838,7 +2838,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_104
+      name: PBOW_Roll1
       rect:
         serializedVersion: 2
         x: 0
@@ -2860,7 +2860,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_105
+      name: PBOW_Roll2
       rect:
         serializedVersion: 2
         x: 73
@@ -2882,7 +2882,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_106
+      name: PBOW_Roll3
       rect:
         serializedVersion: 2
         x: 146
@@ -2904,7 +2904,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_107
+      name: PBOW_Roll4
       rect:
         serializedVersion: 2
         x: 219
@@ -2926,7 +2926,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_108
+      name: PBOW_Roll5
       rect:
         serializedVersion: 2
         x: 292
@@ -2948,7 +2948,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_109
+      name: PBOW_Roll6
       rect:
         serializedVersion: 2
         x: 365
@@ -2970,7 +2970,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_110
+      name: PBOW_Roll7
       rect:
         serializedVersion: 2
         x: 438
@@ -2992,7 +2992,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_111
+      name: PBOW_Ladder1
       rect:
         serializedVersion: 2
         x: 0
@@ -3014,7 +3014,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_112
+      name: PBOW_Ladder2
       rect:
         serializedVersion: 2
         x: 73
@@ -3036,7 +3036,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_113
+      name: PBOW_Ladder3
       rect:
         serializedVersion: 2
         x: 146
@@ -3058,7 +3058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_114
+      name: PBOW_Ladder4
       rect:
         serializedVersion: 2
         x: 219
@@ -3080,7 +3080,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_115
+      name: PBOW_Ladder5
       rect:
         serializedVersion: 2
         x: 292
@@ -3102,7 +3102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_116
+      name: PBOW_Ladder6
       rect:
         serializedVersion: 2
         x: 365
@@ -3124,7 +3124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_117
+      name: PBOW_Ladder7
       rect:
         serializedVersion: 2
         x: 438
@@ -3146,7 +3146,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_118
+      name: PBOW_Ladder8
       rect:
         serializedVersion: 2
         x: 511
@@ -3168,7 +3168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_119
+      name: PBOW_Attack1
       rect:
         serializedVersion: 2
         x: 0
@@ -3190,7 +3190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_120
+      name: PBOW_Attack2
       rect:
         serializedVersion: 2
         x: 73
@@ -3212,7 +3212,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_121
+      name: PBOW_Attack3
       rect:
         serializedVersion: 2
         x: 146
@@ -3234,7 +3234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_122
+      name: PBOW_Attack4
       rect:
         serializedVersion: 2
         x: 219
@@ -3256,7 +3256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_123
+      name: PBOW_Attack5
       rect:
         serializedVersion: 2
         x: 292
@@ -3278,7 +3278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_124
+      name: PBOW_Attack6
       rect:
         serializedVersion: 2
         x: 365
@@ -3300,7 +3300,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_125
+      name: PBOW_Attack7
       rect:
         serializedVersion: 2
         x: 438
@@ -3322,7 +3322,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_126
+      name: PBOW_Attack8
       rect:
         serializedVersion: 2
         x: 511
@@ -3344,7 +3344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_127
+      name: PBOW_Attack9
       rect:
         serializedVersion: 2
         x: 0
@@ -3366,7 +3366,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_128
+      name: PBOW_Attack10
       rect:
         serializedVersion: 2
         x: 73
@@ -3388,7 +3388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_129
+      name: PBOW_Attack11
       rect:
         serializedVersion: 2
         x: 146
@@ -3410,7 +3410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_130
+      name: PBOW_Attack12
       rect:
         serializedVersion: 2
         x: 219
@@ -3432,7 +3432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_131
+      name: PBOW_Attack13
       rect:
         serializedVersion: 2
         x: 292
@@ -3454,7 +3454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_132
+      name: PBOW_Attack14
       rect:
         serializedVersion: 2
         x: 365
@@ -3476,7 +3476,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_133
+      name: PBOW_Dash_Attack1
       rect:
         serializedVersion: 2
         x: 0
@@ -3498,7 +3498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_134
+      name: PBOW_Dash_Attack2
       rect:
         serializedVersion: 2
         x: 73
@@ -3520,7 +3520,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_135
+      name: PBOW_Dash_Attack3
       rect:
         serializedVersion: 2
         x: 146
@@ -3542,7 +3542,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_136
+      name: PBOW_Dash_Attack4
       rect:
         serializedVersion: 2
         x: 219
@@ -3564,7 +3564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_137
+      name: PBOW_Dash_Attack5
       rect:
         serializedVersion: 2
         x: 292
@@ -3586,7 +3586,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_138
+      name: PBOW_Dash_Attack6
       rect:
         serializedVersion: 2
         x: 365
@@ -3608,7 +3608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_139
+      name: PBOW_Dash_Attack7
       rect:
         serializedVersion: 2
         x: 438
@@ -3630,7 +3630,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_140
+      name: PBOW_Dash_Attack8
       rect:
         serializedVersion: 2
         x: 511
@@ -3652,7 +3652,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_141
+      name: PBOW_Dash_Attack9
       rect:
         serializedVersion: 2
         x: 0
@@ -3674,7 +3674,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_142
+      name: PBOW_Spin_Attack1
       rect:
         serializedVersion: 2
         x: 0
@@ -3696,7 +3696,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_143
+      name: PBOW_Spin_Attack2
       rect:
         serializedVersion: 2
         x: 73
@@ -3718,7 +3718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_144
+      name: PBOW_Spin_Attack3
       rect:
         serializedVersion: 2
         x: 146
@@ -3740,7 +3740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_145
+      name: PBOW_Spin_Attack4
       rect:
         serializedVersion: 2
         x: 219
@@ -3762,7 +3762,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BH-CrosBow_146
+      name: PBOW_Spin_Attack5
       rect:
         serializedVersion: 2
         x: 292
@@ -3799,153 +3799,153 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":73.0,"y":54.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.3799999952316284,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BH-CrosBow_0: 4536585280519004551
-      BH-CrosBow_1: 1044081822230326407
-      BH-CrosBow_10: 523575674631787457
-      BH-CrosBow_100: 2139911152130082424
-      BH-CrosBow_101: 9029951879061643311
-      BH-CrosBow_102: -8266929600815509962
-      BH-CrosBow_103: -3682917051653063488
-      BH-CrosBow_104: 7192617106422622765
-      BH-CrosBow_105: -6713973853696065271
-      BH-CrosBow_106: -536819171467797193
-      BH-CrosBow_107: 2891806736355188002
-      BH-CrosBow_108: -1431404867803169497
-      BH-CrosBow_109: -3834621152372392106
-      BH-CrosBow_11: 2698427469413296231
-      BH-CrosBow_110: -566169141483008651
-      BH-CrosBow_111: -1129799918797153529
-      BH-CrosBow_112: 5149466516464281118
-      BH-CrosBow_113: -8178737914612267633
-      BH-CrosBow_114: -2367167017858783360
-      BH-CrosBow_115: 4288668805260052144
-      BH-CrosBow_116: -6975219105993417115
-      BH-CrosBow_117: 7343203130485305916
-      BH-CrosBow_118: 1266873726159552105
-      BH-CrosBow_119: -7107268482877173781
-      BH-CrosBow_12: 7205866833522263734
-      BH-CrosBow_120: 5339336413718992258
-      BH-CrosBow_121: 4133575122111881440
-      BH-CrosBow_122: -5471993640089407354
-      BH-CrosBow_123: 3039565714034663760
-      BH-CrosBow_124: 3673754708507212048
-      BH-CrosBow_125: -8461612253813289263
-      BH-CrosBow_126: -7958407130960801405
-      BH-CrosBow_127: -3428052114693805303
-      BH-CrosBow_128: -6182599166758829457
-      BH-CrosBow_129: -3212957407847940638
-      BH-CrosBow_13: 7561978614551448890
-      BH-CrosBow_130: -6389637075496671727
-      BH-CrosBow_131: 6198126687466479298
-      BH-CrosBow_132: -1316695779285305923
-      BH-CrosBow_133: -6520440312667365827
-      BH-CrosBow_134: 118450637390673454
-      BH-CrosBow_135: 8785703907181807084
-      BH-CrosBow_136: 2941430551650142694
-      BH-CrosBow_137: -8160192283007048478
-      BH-CrosBow_138: 3560007255643197273
-      BH-CrosBow_139: 910128614901386900
-      BH-CrosBow_14: -7818510554286558953
-      BH-CrosBow_140: 2527233960881877773
-      BH-CrosBow_141: 4755039304006057866
-      BH-CrosBow_142: -2906529325332560307
-      BH-CrosBow_143: -6448641596832481077
-      BH-CrosBow_144: -7440553920219248541
-      BH-CrosBow_145: 4030652853956735530
-      BH-CrosBow_146: -5894520786700079386
-      BH-CrosBow_15: -9116777597124632024
-      BH-CrosBow_16: 6904762930522680795
-      BH-CrosBow_17: -3664970520776520134
-      BH-CrosBow_18: -6407807458124240779
-      BH-CrosBow_19: 3001324217096556918
-      BH-CrosBow_2: 6651141834900979144
-      BH-CrosBow_20: -8767871629915496216
-      BH-CrosBow_21: 6340827838971464458
-      BH-CrosBow_22: -6718290588386034182
-      BH-CrosBow_23: -4332316492234096086
-      BH-CrosBow_24: 5853262938118217184
-      BH-CrosBow_25: 3221114765780527813
-      BH-CrosBow_26: 363744974500667276
-      BH-CrosBow_27: -1521574753939757544
-      BH-CrosBow_28: -5348312917132421179
-      BH-CrosBow_29: -1358626878325442023
-      BH-CrosBow_3: 2137457755080443611
-      BH-CrosBow_30: -1709499115977920185
-      BH-CrosBow_31: 7683202791079873936
-      BH-CrosBow_32: -9092880201583760956
-      BH-CrosBow_33: -3702944337118725417
-      BH-CrosBow_34: 2878526093015537167
-      BH-CrosBow_35: -3764033743437334185
-      BH-CrosBow_36: -7627346954116627743
-      BH-CrosBow_37: 5785680116975250414
-      BH-CrosBow_38: 1902462817459885522
-      BH-CrosBow_39: 5572636080142982570
-      BH-CrosBow_4: -2515939670355302226
-      BH-CrosBow_40: -4830982773355763120
-      BH-CrosBow_41: -5295343527747408273
-      BH-CrosBow_42: 748551272033895837
-      BH-CrosBow_43: -7620884479762612467
-      BH-CrosBow_44: -2468320653434338110
-      BH-CrosBow_45: 5698386695828243399
-      BH-CrosBow_46: -7334145148178675457
-      BH-CrosBow_47: 3931148088247536339
-      BH-CrosBow_48: -7327346001424114025
-      BH-CrosBow_49: -3149065470039575290
-      BH-CrosBow_5: 6338643482906728456
-      BH-CrosBow_50: 727044446071275695
-      BH-CrosBow_51: 9145004329159028794
-      BH-CrosBow_52: 1878463819581777998
-      BH-CrosBow_53: -1994338578175034842
-      BH-CrosBow_54: -6879170158013495815
-      BH-CrosBow_55: -8066248917948361420
-      BH-CrosBow_56: 357224486183028733
-      BH-CrosBow_57: -3341808524711593113
-      BH-CrosBow_58: 5356001576535719717
-      BH-CrosBow_59: 8568700180483973562
-      BH-CrosBow_6: 5099907831442582649
-      BH-CrosBow_60: -1840732621064081285
-      BH-CrosBow_61: 1470400004625110308
-      BH-CrosBow_62: -8990906662487838756
-      BH-CrosBow_63: 8485686260509672396
-      BH-CrosBow_64: -8401140691029637351
-      BH-CrosBow_65: -2552773492514810261
-      BH-CrosBow_66: 4174469951464495102
-      BH-CrosBow_67: -5358909228762038435
-      BH-CrosBow_68: -1315259781922604363
-      BH-CrosBow_69: 2777860195431670753
-      BH-CrosBow_7: -3182272273957580097
-      BH-CrosBow_70: -6148546163060039146
-      BH-CrosBow_71: -6681718744760430957
-      BH-CrosBow_72: 980224875555364718
-      BH-CrosBow_73: 7326350639181645425
-      BH-CrosBow_74: -8660561010142757388
-      BH-CrosBow_75: -6710699307947851004
-      BH-CrosBow_76: -6974447161752534741
-      BH-CrosBow_77: 6104526517012332291
-      BH-CrosBow_78: 6210783986114657448
-      BH-CrosBow_79: -7056058433540515684
-      BH-CrosBow_8: -2005048787948829937
-      BH-CrosBow_80: 5756930174814307078
-      BH-CrosBow_81: -6234587831973569678
-      BH-CrosBow_82: -641824778593813016
-      BH-CrosBow_83: 6586602583153189367
-      BH-CrosBow_84: 2038515432318297069
-      BH-CrosBow_85: 772534984368283183
-      BH-CrosBow_86: -7796216014178230809
-      BH-CrosBow_87: -1493568777870593179
-      BH-CrosBow_88: -8772243020633004117
-      BH-CrosBow_89: -8366110852143891744
-      BH-CrosBow_9: 1611954962779731225
-      BH-CrosBow_90: -2616165760596177275
-      BH-CrosBow_91: -5130314646349607106
-      BH-CrosBow_92: -1585729434390311527
-      BH-CrosBow_93: 3431220375358797757
-      BH-CrosBow_94: 3074057354000137300
-      BH-CrosBow_95: -7517716564265477970
-      BH-CrosBow_96: -2805006095854640462
-      BH-CrosBow_97: -7013248587791753456
-      BH-CrosBow_98: 3192044873646655082
-      BH-CrosBow_99: -1280000082473881712
+      PBOW_Attack1: -7107268482877173781
+      PBOW_Attack10: -6182599166758829457
+      PBOW_Attack11: -3212957407847940638
+      PBOW_Attack12: -6389637075496671727
+      PBOW_Attack13: 6198126687466479298
+      PBOW_Attack14: -1316695779285305923
+      PBOW_Attack2: 5339336413718992258
+      PBOW_Attack3: 4133575122111881440
+      PBOW_Attack4: -5471993640089407354
+      PBOW_Attack5: 3039565714034663760
+      PBOW_Attack6: 3673754708507212048
+      PBOW_Attack7: -8461612253813289263
+      PBOW_Attack8: -7958407130960801405
+      PBOW_Attack9: -3428052114693805303
+      PBOW_Crouch1: 7326350639181645425
+      PBOW_Crouch2: -8660561010142757388
+      PBOW_Crouch3: -6710699307947851004
+      PBOW_Crouch4: -6974447161752534741
+      PBOW_Crouch5: 6104526517012332291
+      PBOW_Crouch_Aim1: 6210783986114657448
+      PBOW_Crouch_Aim2: -7056058433540515684
+      PBOW_Crouch_Aim3: 5756930174814307078
+      PBOW_Crouch_Aim4: -6234587831973569678
+      PBOW_Crouch_Aim5: -641824778593813016
+      PBOW_Dash1: 6586602583153189367
+      PBOW_Dash2: 2038515432318297069
+      PBOW_Dash3: 772534984368283183
+      PBOW_Dash4: -7796216014178230809
+      PBOW_Dash5: -1493568777870593179
+      PBOW_Dash6: -8772243020633004117
+      PBOW_Dash7: -8366110852143891744
+      PBOW_Dash_Attack1: -6520440312667365827
+      PBOW_Dash_Attack2: 118450637390673454
+      PBOW_Dash_Attack3: 8785703907181807084
+      PBOW_Dash_Attack4: 2941430551650142694
+      PBOW_Dash_Attack5: -8160192283007048478
+      PBOW_Dash_Attack6: 3560007255643197273
+      PBOW_Dash_Attack7: 910128614901386900
+      PBOW_Dash_Attack8: 2527233960881877773
+      PBOW_Dash_Attack9: 4755039304006057866
+      PBOW_Death1: -7327346001424114025
+      PBOW_Death2: -3149065470039575290
+      PBOW_Death3: 727044446071275695
+      PBOW_Death4: 9145004329159028794
+      PBOW_Death5: 1878463819581777998
+      PBOW_Death6: -1994338578175034842
+      PBOW_Death7: -6879170158013495815
+      PBOW_Death_Fall1: 5698386695828243399
+      PBOW_Death_Fall2: -7334145148178675457
+      PBOW_Death_Fall3: 3931148088247536339
+      PBOW_Fall1: -7627346954116627743
+      PBOW_Fall2: 5785680116975250414
+      PBOW_Fall3: 1902462817459885522
+      PBOW_Fall_Aim1: -8401140691029637351
+      PBOW_Fall_Aim2: -2552773492514810261
+      PBOW_Fall_Aim3: 4174469951464495102
+      PBOW_Fall_Shoot1: 5356001576535719717
+      PBOW_Fall_Shoot2: 8568700180483973562
+      PBOW_Fall_Shoot3: -1840732621064081285
+      PBOW_Hurt1: 5572636080142982570
+      PBOW_Hurt2: -4830982773355763120
+      PBOW_Hurt3: -5295343527747408273
+      PBOW_Hurt_Air1: 748551272033895837
+      PBOW_Hurt_Air2: -7620884479762612467
+      PBOW_Hurt_Air3: -2468320653434338110
+      PBOW_Idle1: 4536585280519004551
+      PBOW_Idle2: 1044081822230326407
+      PBOW_Idle3: 6651141834900979144
+      PBOW_Idle4: 2137457755080443611
+      PBOW_Idle5: -2515939670355302226
+      PBOW_Idle6: 6338643482906728456
+      PBOW_Idle7: 5099907831442582649
+      PBOW_Idle8: -3182272273957580097
+      PBOW_Idle_Aim1: -2005048787948829937
+      PBOW_Idle_Aim2: 1611954962779731225
+      PBOW_Idle_Aim3: 523575674631787457
+      PBOW_Idle_Aim4: 2698427469413296231
+      PBOW_Idle_Aim5: 7205866833522263734
+      PBOW_Idle_Aim6: 7561978614551448890
+      PBOW_Idle_Aim7: -7818510554286558953
+      PBOW_Idle_Aim8: -9116777597124632024
+      PBOW_Jump1: -9092880201583760956
+      PBOW_Jump2: -3702944337118725417
+      PBOW_Jump3: 2878526093015537167
+      PBOW_Jump4: -3764033743437334185
+      PBOW_Jump_Aim1: 1470400004625110308
+      PBOW_Jump_Aim2: -8990906662487838756
+      PBOW_Jump_Aim3: 8485686260509672396
+      PBOW_Jump_Shoot1: -8066248917948361420
+      PBOW_Jump_Shoot2: 357224486183028733
+      PBOW_Jump_Shoot3: -3341808524711593113
+      PBOW_Ladder1: -1129799918797153529
+      PBOW_Ladder2: 5149466516464281118
+      PBOW_Ladder3: -8178737914612267633
+      PBOW_Ladder4: -2367167017858783360
+      PBOW_Ladder5: 4288668805260052144
+      PBOW_Ladder6: -6975219105993417115
+      PBOW_Ladder7: 7343203130485305916
+      PBOW_Ladder8: 1266873726159552105
+      PBOW_Ledge_Climb1: -7013248587791753456
+      PBOW_Ledge_Climb2: 3192044873646655082
+      PBOW_Ledge_Climb3: -1280000082473881712
+      PBOW_Ledge_Grab1: 3431220375358797757
+      PBOW_Ledge_Grab2: 3074057354000137300
+      PBOW_Ledge_Grab3: -7517716564265477970
+      PBOW_Ledge_Grab4: -2805006095854640462
+      PBOW_Roll1: 7192617106422622765
+      PBOW_Roll2: -6713973853696065271
+      PBOW_Roll3: -536819171467797193
+      PBOW_Roll4: 2891806736355188002
+      PBOW_Roll5: -1431404867803169497
+      PBOW_Roll6: -3834621152372392106
+      PBOW_Roll7: -566169141483008651
+      PBOW_Run1: 6904762930522680795
+      PBOW_Run2: -3664970520776520134
+      PBOW_Run3: -6407807458124240779
+      PBOW_Run4: 3001324217096556918
+      PBOW_Run5: -8767871629915496216
+      PBOW_Run6: 6340827838971464458
+      PBOW_Run7: -6718290588386034182
+      PBOW_Run8: -4332316492234096086
+      PBOW_Run_Aim1: 5853262938118217184
+      PBOW_Run_Aim2: 3221114765780527813
+      PBOW_Run_Aim3: 363744974500667276
+      PBOW_Run_Aim4: -1521574753939757544
+      PBOW_Run_Aim5: -5348312917132421179
+      PBOW_Run_Aim6: -1358626878325442023
+      PBOW_Run_Aim7: -1709499115977920185
+      PBOW_Run_Aim8: 7683202791079873936
+      PBOW_Shoot1: -5358909228762038435
+      PBOW_Shoot2: -1315259781922604363
+      PBOW_Shoot3: 2777860195431670753
+      PBOW_Shoot_Crouch1: -6148546163060039146
+      PBOW_Shoot_Crouch2: -6681718744760430957
+      PBOW_Shoot_Crouch3: 980224875555364718
+      PBOW_Slide1: 2139911152130082424
+      PBOW_Slide2: 9029951879061643311
+      PBOW_Slide3: -8266929600815509962
+      PBOW_Slide4: -3682917051653063488
+      PBOW_Spin_Attack1: -2906529325332560307
+      PBOW_Spin_Attack2: -6448641596832481077
+      PBOW_Spin_Attack3: -7440553920219248541
+      PBOW_Spin_Attack4: 4030652853956735530
+      PBOW_Spin_Attack5: -5894520786700079386
+      PBOW_Wallslide1: -2616165760596177275
+      PBOW_Wallslide2: -5130314646349607106
+      PBOW_Wallslide3: -1585729434390311527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
