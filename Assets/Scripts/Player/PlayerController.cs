@@ -23,12 +23,14 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         bool jumpInput = Input.GetButtonDown("Jump");
+        bool aimInput = Input.GetMouseButton(1); // RMB held
 
         // Move player
         rb.linearVelocityX = horizontalInput * moveSpeed;
 
         // Send movement to Animator
         animator.SetFloat("xVelocity", Mathf.Abs(horizontalInput));
+        animator.SetBool("isAiming", aimInput);
 
         // Flip sprite
         if (horizontalInput > 0.01f)
