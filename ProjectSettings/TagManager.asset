@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 789531461
+    locked: 0
   - name: PlayArea
     uniqueID: 3335911267
     locked: 0
