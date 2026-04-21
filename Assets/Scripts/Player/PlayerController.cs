@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         bool jumpInput = Input.GetButtonDown("Jump");
         bool aimInput = Input.GetMouseButton(1);
+        bool shootInput = Input.GetMouseButtonDown(0);
 
         // Move player
         rb.linearVelocityX = horizontalInput * moveSpeed;
@@ -34,6 +35,12 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("yVelocity", rb.linearVelocityY);
         animator.SetBool("isGrounded", isGrounded);
         animator.SetBool("isAiming", aimInput);
+
+        // Shoot while idle
+        if (shootInput && Mathf.Abs(horizontalInput) < 0.1f && isGrounded)
+        {
+            animator.SetTrigger("shoot");
+        }
 
         // Flip sprite
         if (horizontalInput > 0.01f)
