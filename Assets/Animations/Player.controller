@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3747411945014653048}
@@ -34,10 +34,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: -0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1175303105063890436}
@@ -91,7 +91,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   - m_ConditionMode: 1
     m_ConditionEvent: isAiming
@@ -145,7 +145,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3935696567766447024}
@@ -170,7 +170,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2142634540149964279}
@@ -221,10 +221,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: -0.1
   - m_ConditionMode: 2
     m_ConditionEvent: isAiming
@@ -266,16 +266,16 @@ AnimatorStateMachine:
     m_Position: {x: 390, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4832571285957871451}
-    m_Position: {x: -350, y: -10, z: 0}
+    m_Position: {x: 180, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6039048465191187110}
-    m_Position: {x: 1410, y: 80, z: 0}
+    m_Position: {x: 420, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5220105799927273033}
-    m_Position: {x: -280, y: 120, z: 0}
+    m_Position: {x: 190, y: 330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6064839131136958722}
-    m_Position: {x: -250, y: 190, z: 0}
+    m_Position: {x: 190, y: 390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7312863290119190347}
     m_Position: {x: 880, y: -40, z: 0}
@@ -284,13 +284,13 @@ AnimatorStateMachine:
     m_Position: {x: 1240, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7111521942441449691}
-    m_Position: {x: 895, y: 685, z: 0}
+    m_Position: {x: 430, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1387729117953854513}
     m_Position: {x: 1250, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7756884021646379926}
-    m_Position: {x: 965, y: 815, z: 0}
+    m_Position: {x: 430, y: 380, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7253360536459068114}
     m_Position: {x: 1160, y: -450, z: 0}
@@ -316,10 +316,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   - m_ConditionMode: 2
     m_ConditionEvent: isAiming
@@ -373,10 +373,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3117958747830475586}
@@ -401,10 +401,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: -0.1
   - m_ConditionMode: 2
     m_ConditionEvent: isAiming
@@ -515,10 +515,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7312863290119190347}
@@ -568,19 +568,19 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 6
   m_AnimatorParameters:
-  - m_Name: xVelocity
+  - m_Name: horizontalInput
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: yVelocity
+  - m_Name: yVel
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: _isGrounded
+  - m_Name: isGrounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -621,10 +621,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7253360536459068114}
@@ -735,10 +735,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: -0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1175303105063890436}
@@ -763,7 +763,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7312863290119190347}
@@ -872,10 +872,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7253360536459068114}
@@ -951,10 +951,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2142634540149964279}
@@ -979,8 +979,11 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: -0.1
+  - m_ConditionMode: 2
+    m_ConditionEvent: isGrounded
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7513219769135858902}
   m_Solo: 0
@@ -1052,10 +1055,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   - m_ConditionMode: 2
     m_ConditionEvent: isAiming
@@ -1195,7 +1198,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isAiming
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: xVelocity
+    m_ConditionEvent: horizontalInput
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7312863290119190347}
@@ -1246,7 +1249,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: -0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1175303105063890436}
@@ -1271,10 +1274,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: _isGrounded
+    m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: yVelocity
+    m_ConditionEvent: yVel
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3117958747830475586}
