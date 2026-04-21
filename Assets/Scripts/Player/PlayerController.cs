@@ -1,78 +1,65 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class PlayerController : MonoBehaviour
 {
+
+    //public GameObject groundCheckTransform;
+    [SerializeField] private float groundCheckRadius = 0.02f;
+    [SerializeField] private LayerMask groundLayer;
+
+    //Configurable variables
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 5f;
 
+    //1. Poll our input so that we can see what our input values are.
+    //2. Move our player horizontally based on the horizontal input value.
     private Rigidbody2D rb;
-    private SpriteRenderer sr;
-    private Animator animator;
+    private Collider2D col;
 
-    private bool isGrounded;
+    //cached variables
+    private Vector2 groundCheckPos => CalculateGroundCheckPos();
 
+    //state variables
+    private bool _isGrounded;
+
+    private Vector2 CalculateGroundCheckPos()
+    {
+        Bounds bounds = col.bounds;
+        return new Vector2(bounds.center.x, bounds.min.y);
+    }
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
+        col = GetComponent<Collider2D>();
+
+        //if (groundCheckTransform == null)
+        //{
+        //    Debug.LogError("Ground Check Transform is not assigned in the inspector.");
+        //    groundCheckTransform = new GameObject("GroundCheck");
+        //    groundCheckTransform.transform.SetParent(transform);
+        //    groundCheckTransform.transform.localPosition = Vector3.zero;
+        //}
     }
 
+    // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        bool jumpInput = Input.GetButtonDown("Jump");
-        bool aimInput = Input.GetMouseButton(1);
-        bool shootInput = Input.GetMouseButtonDown(0);
+        _isGrounded = Physics2D.OverlapCircle(groundCheckPos, groundCheckRadius, groundLayer);
 
-        // Move player
+        float horizontalInput = Input.GetAxis("Horizontal");
+        bool jumpInput = Input.GetButtonDown("Jump");
+
+        // Move the player horizontally based on the horizontal input value
         rb.linearVelocityX = horizontalInput * moveSpeed;
 
-        // Animator parameters
-        animator.SetFloat("xVelocity", Mathf.Abs(horizontalInput));
-        animator.SetFloat("yVelocity", rb.linearVelocityY);
-        animator.SetBool("isGrounded", isGrounded);
-        animator.SetBool("isAiming", aimInput);
-
-        // Shoot while idle
-        if (shootInput && Mathf.Abs(horizontalInput) < 0.1f && isGrounded)
-        {
-            animator.SetTrigger("shoot");
-        }
-
-        // Flip sprite
-        if (horizontalInput > 0.01f)
-        {
-            sr.flipX = false;
-        }
-        else if (horizontalInput < -0.01f)
-        {
-            sr.flipX = true;
-        }
-
-        // Jump
-        if (jumpInput && isGrounded)
+        if (jumpInput && _isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isGrounded = false;
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-            isGrounded = false;
-        }
     }
 }

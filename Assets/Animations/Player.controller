@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: yVelocity
@@ -221,7 +221,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: yVelocity
@@ -316,7 +316,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: xVelocity
@@ -373,7 +373,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: yVelocity
@@ -401,7 +401,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: yVelocity
@@ -515,7 +515,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: xVelocity
@@ -580,7 +580,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: isGrounded
+  - m_Name: _isGrounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -621,7 +621,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: yVelocity
@@ -735,7 +735,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: yVelocity
@@ -872,7 +872,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: yVelocity
@@ -951,7 +951,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: xVelocity
@@ -1052,7 +1052,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: xVelocity
@@ -1271,7 +1271,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isGrounded
+    m_ConditionEvent: _isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: yVelocity
