@@ -689,8 +689,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584589442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.64, y: -1.82, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.64, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -782,26 +782,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255850be36ddc654794a2c28d05e03e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundRayLength: 0.15
+  maxSlopeAngle: 45
   moveSpeed: 10
   jumpForce: 10
-  gravity: -25
-  slideMovement:
-    <maxIterations>k__BackingField: 3
-    <surfaceSlideAngle>k__BackingField: 90
-    <gravitySlipAngle>k__BackingField: 90
-    <surfaceUp>k__BackingField: {x: 0, y: 1}
-    <surfaceAnchor>k__BackingField: {x: 0, y: -1}
-    <gravity>k__BackingField: {x: 0, y: -9.81}
-    <startPosition>k__BackingField: {x: 0, y: 0}
-    <selectedCollider>k__BackingField: {fileID: 0}
-    <layerMask>k__BackingField:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    <useLayerMask>k__BackingField: 0
-    <useStartPosition>k__BackingField: 0
-    <useNoMove>k__BackingField: 0
-    <useSimulationMove>k__BackingField: 0
-    <useAttachedTriggers>k__BackingField: 0
 --- !u!95 &1584589448
 Animator:
   serializedVersion: 7
@@ -894,8 +881,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.01999998, y: 0.8253602}
-  m_Size: {x: 1.0397944, y: 1.654783}
+  m_Offset: {x: -0.01999998, y: 0.84564465}
+  m_Size: {x: 1.0397944, y: 1.6142141}
   m_Direction: 0
 --- !u!1 &1606296440
 GameObject:
@@ -9848,8 +9835,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 619394802}
-  - {fileID: 1584589444}
   - {fileID: 1408070843}
   - {fileID: 469902439}
   - {fileID: 1337763474}
   - {fileID: 641710192}
+  - {fileID: 1584589444}
