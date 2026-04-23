@@ -610,11 +610,11 @@ GameObject:
   - component: {fileID: 1584589444}
   - component: {fileID: 1584589443}
   - component: {fileID: 1584589445}
-  - component: {fileID: 1584589449}
-  - component: {fileID: 1584589446}
   - component: {fileID: 1584589450}
   - component: {fileID: 1584589447}
   - component: {fileID: 1584589448}
+  - component: {fileID: 1584589449}
+  - component: {fileID: 1584589446}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -782,15 +782,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255850be36ddc654794a2c28d05e03e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  groundCheckDistance: 0.12
-  groundCheckWidthMultiplier: 0.7
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
   moveSpeed: 10
   jumpForce: 10
-  groundedStickVelocity: -0.5
-  jumpGroundIgnoreTime: 0.12
+  gravity: -25
+  slideMovement:
+    <maxIterations>k__BackingField: 3
+    <surfaceSlideAngle>k__BackingField: 90
+    <gravitySlipAngle>k__BackingField: 90
+    <surfaceUp>k__BackingField: {x: 0, y: 1}
+    <surfaceAnchor>k__BackingField: {x: 0, y: -1}
+    <gravity>k__BackingField: {x: 0, y: -9.81}
+    <startPosition>k__BackingField: {x: 0, y: 0}
+    <selectedCollider>k__BackingField: {fileID: 0}
+    <layerMask>k__BackingField:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    <useLayerMask>k__BackingField: 0
+    <useStartPosition>k__BackingField: 0
+    <useNoMove>k__BackingField: 0
+    <useSimulationMove>k__BackingField: 0
+    <useAttachedTriggers>k__BackingField: 0
 --- !u!95 &1584589448
 Animator:
   serializedVersion: 7
