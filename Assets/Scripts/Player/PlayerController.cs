@@ -13,12 +13,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 5f;
 
+    [Header("Ladder")]
+    [SerializeField] private float climbSpeed = 5f;
+
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
     private SpriteRenderer sr;
     private Animator anim;
 
     private float horizontalInput;
+    private float verticalInput;
+
     private bool jumpPressed;
     private bool aimInput;
     private bool shootInput;
@@ -26,17 +31,26 @@ public class PlayerController : MonoBehaviour
     private bool _isGrounded;
     private Vector2 groundNormal = Vector2.up;
 
+    private bool isTouchingLadder;
+    private bool isOnLadder;
+    private bool isClimbing;
+
+    private float startingGravity;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CapsuleCollider2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        startingGravity = rb.gravityScale;
     }
 
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("Jump"))
             jumpPressed = true;
@@ -47,10 +61,21 @@ public class PlayerController : MonoBehaviour
         if (horizontalInput != 0)
             SpriteFlip(horizontalInput);
 
+        // Press W/S while touching ladder to attach to it
+        if (isTouchingLadder && Mathf.Abs(verticalInput) > 0f)
+        {
+            isOnLadder = true;
+        }
+
+        // Climbing animation only plays while actively pressing W/S
+        isClimbing = isOnLadder && Mathf.Abs(verticalInput) > 0f;
+
         anim.SetFloat("horizontalInput", Mathf.Abs(horizontalInput));
         anim.SetBool("isGrounded", _isGrounded);
         anim.SetFloat("yVel", rb.linearVelocityY);
         anim.SetBool("isAiming", aimInput);
+        anim.SetBool("isOnLadder", isOnLadder);
+        anim.SetBool("isClimbing", isClimbing);
 
         if (shootInput)
             anim.SetTrigger("shoot");
@@ -60,12 +85,19 @@ public class PlayerController : MonoBehaviour
     {
         CheckGround();
 
-        Move();
-
-        if (jumpPressed && _isGrounded)
+        if (isOnLadder)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            ClimbLadder();
+        }
+        else
+        {
+            Move();
+
+            if (jumpPressed && _isGrounded)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
         }
 
         jumpPressed = false;
@@ -102,6 +134,8 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+        rb.gravityScale = startingGravity;
+
         if (_isGrounded)
         {
             Vector2 slopeDirection = new Vector2(groundNormal.y, -groundNormal.x);
@@ -123,8 +157,55 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void ClimbLadder()
+    {
+        rb.gravityScale = 0f;
+
+        rb.linearVelocity = new Vector2(
+            horizontalInput * moveSpeed,
+            verticalInput * climbSpeed
+        );
+
+        if (jumpPressed)
+        {
+            isOnLadder = false;
+            isClimbing = false;
+
+            rb.gravityScale = startingGravity;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+    }
+
     void SpriteFlip(float horizontalInput)
     {
         sr.flipX = horizontalInput < 0;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isTouchingLadder = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isTouchingLadder = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isTouchingLadder = false;
+            isOnLadder = false;
+            isClimbing = false;
+            rb.gravityScale = startingGravity;
+        }
     }
 }
