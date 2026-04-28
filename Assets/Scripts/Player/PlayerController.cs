@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isTouchingLadder;
     private bool isOnLadder;
-    private bool isClimbing;
+    //private bool isClimbing;
 
     private float startingGravity;
 
@@ -48,11 +48,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         ReadInput();
-
         MovementState();
         SpriteFlipping();
         FireAttack();
-
         UpdateAnims();
     }
 
@@ -67,8 +65,9 @@ public class PlayerController : MonoBehaviour
         else
         {
             GroundMovement();
-            Jump();
         }
+
+        Jump();
 
         jumpPressed = false;
     }
@@ -96,7 +95,11 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        jumpPressed = Input.GetButtonDown("Jump");
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpPressed = true;
+        }
+
         firePressed = Input.GetButtonDown("Fire1");
         aimInput = Input.GetMouseButton(1);
     }
@@ -114,7 +117,7 @@ public class PlayerController : MonoBehaviour
             isOnLadder = true;
         }
 
-        isClimbing = isOnLadder && Mathf.Abs(verticalInput) > 0f;
+        //isClimbing = isOnLadder && Mathf.Abs(verticalInput) > 0f;
     }
 
     private void GroundMovement()
@@ -135,16 +138,20 @@ public class PlayerController : MonoBehaviour
             horizontalInput * moveSpeed,
             verticalInput * climbSpeed
         );
-
-        if (jumpPressed)
-        {
-            JumpOffLadder();
-        }
     }
 
     private void Jump()
     {
-        if (!jumpPressed || !_isGrounded)
+        if (!jumpPressed)
+            return;
+
+        if (isOnLadder)
+        {
+            JumpOffLadder();
+            return;
+        }
+
+        if (!_isGrounded)
             return;
 
         rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
@@ -154,7 +161,7 @@ public class PlayerController : MonoBehaviour
     private void JumpOffLadder()
     {
         isOnLadder = false;
-        isClimbing = false;
+        //isClimbing = false;
 
         rb.gravityScale = startingGravity;
         rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
@@ -189,7 +196,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("yVel", rb.linearVelocityY);
         anim.SetBool("isAiming", aimInput);
         anim.SetBool("isOnLadder", isOnLadder);
-        anim.SetBool("isClimbing", isClimbing);
+        anim.SetFloat("climbAnimSpeed", verticalInput);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -222,7 +229,7 @@ public class PlayerController : MonoBehaviour
     {
         isTouchingLadder = false;
         isOnLadder = false;
-        isClimbing = false;
+        //isClimbing = false;
 
         rb.gravityScale = startingGravity;
     }

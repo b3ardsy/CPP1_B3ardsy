@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 727978416}
   - component: {fileID: 727978415}
   m_Layer: 0
-  m_Name: 1_0
+  m_Name: Ladder
   m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 1497319765}
   - component: {fileID: 1497319764}
   m_Layer: 0
-  m_Name: 1_0 (1)
+  m_Name: Ladder2
   m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1464,7 +1464,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundRayLength: 0.15
-  maxSlopeAngle: 45
   moveSpeed: 10
   jumpForce: 10
   climbSpeed: 5
@@ -1575,7 +1574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002f11b7c3db4cb448856ec1a5e64af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  initialShotVelocity: {x: 10, y: 0}
+  initialShotVelocity: {x: 15, y: 0}
   spawnPointLeft: {fileID: 1181811674}
   spawnPointRight: {fileID: 1842066358}
   projectilePrefab: {fileID: 7703277693943547760, guid: 0101bca3a76ada347954eaebac44c3d3, type: 3}
