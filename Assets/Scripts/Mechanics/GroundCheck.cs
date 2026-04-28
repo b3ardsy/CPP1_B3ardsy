@@ -3,23 +3,19 @@ using UnityEngine;
 public class GroundCheck
 {
     private bool isGrounded = false;
-    private Vector2 groundNormal = Vector2.up;
 
     private LayerMask groundLayer;
     private Rigidbody2D rb;
     private Collider2D col;
     private float rayLength;
-    private float maxSlopeAngle;
 
     public bool IsGrounded => isGrounded;
-    public Vector2 GroundNormal => groundNormal;
 
-    public GroundCheck(Collider2D col, Rigidbody2D rb, float rayLength, float maxSlopeAngle, LayerMask groundLayer)
+    public GroundCheck(Collider2D col, Rigidbody2D rb, float rayLength, LayerMask groundLayer)
     {
         this.col = col;
         this.rb = rb;
         this.rayLength = rayLength;
-        this.maxSlopeAngle = maxSlopeAngle;
         this.groundLayer = groundLayer;
     }
 
@@ -39,18 +35,7 @@ public class GroundCheck
             groundLayer
         );
 
-        if (hit.collider != null)
-        {
-            float slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
-
-            isGrounded = slopeAngle <= maxSlopeAngle;
-            groundNormal = hit.normal;
-        }
-        else
-        {
-            isGrounded = false;
-            groundNormal = Vector2.up;
-        }
+        isGrounded = hit.collider != null;
 
         Debug.DrawRay(rayOrigin, Vector2.down * rayLength, Color.red);
     }

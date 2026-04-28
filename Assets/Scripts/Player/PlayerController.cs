@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     [Header("Ground Check")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundRayLength = 0.15f;
-    [SerializeField] private float maxSlopeAngle = 45f;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
@@ -30,15 +29,12 @@ public class PlayerController : MonoBehaviour
     private bool aimInput;
 
     private bool _isGrounded;
-    private Vector2 groundNormal = Vector2.up;
 
     private bool isTouchingLadder;
     private bool isOnLadder;
     private bool isClimbing;
 
     private float startingGravity;
-
-    private bool _isFiring;
 
     void Start()
     {
@@ -51,7 +47,6 @@ public class PlayerController : MonoBehaviour
             col,
             rb,
             groundRayLength,
-            maxSlopeAngle,
             groundLayer
         );
 
@@ -61,6 +56,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
+
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         bool fireInput = Input.GetButtonDown("Fire1");
@@ -69,7 +65,6 @@ public class PlayerController : MonoBehaviour
             jumpPressed = true;
 
         aimInput = Input.GetMouseButton(1);
-        
 
         if (horizontalInput != 0)
             SpriteFlip(horizontalInput);
@@ -92,15 +87,12 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetTrigger("Fire");
         }
- 
     }
 
     void FixedUpdate()
     {
         groundCheck.Check();
-
         _isGrounded = groundCheck.IsGrounded;
-        groundNormal = groundCheck.GroundNormal;
 
         if (isOnLadder)
         {
@@ -124,28 +116,10 @@ public class PlayerController : MonoBehaviour
     {
         rb.gravityScale = startingGravity;
 
-        if (_isGrounded)
-        {
-            Vector2 slopeDirection = new Vector2(
-                groundNormal.y,
-                -groundNormal.x
-            );
-
-            if (horizontalInput < 0)
-                slopeDirection *= -1;
-
-            rb.linearVelocity = new Vector2(
-                slopeDirection.x * Mathf.Abs(horizontalInput) * moveSpeed,
-                slopeDirection.y * Mathf.Abs(horizontalInput) * moveSpeed
-            );
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(
-                horizontalInput * moveSpeed,
-                rb.linearVelocityY
-            );
-        }
+        rb.linearVelocity = new Vector2(
+            horizontalInput * moveSpeed,
+            rb.linearVelocityY
+        );
     }
 
     void ClimbLadder()

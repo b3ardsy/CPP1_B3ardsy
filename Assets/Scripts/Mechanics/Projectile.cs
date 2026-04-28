@@ -1,13 +1,11 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-
+[RequireComponent(typeof(SpriteRenderer))]
 public class Projectile : MonoBehaviour
 {
-
     [SerializeField, Range(0.05f, 10f)] private float lifetime = 10f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Destroy(gameObject, lifetime);
@@ -18,15 +16,16 @@ public class Projectile : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = velocity;
 
-        // Flip sprite based on direction
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
-
-        if (velocity.x < 0)
-            sr.flipX = true;
-        else
-            sr.flipX = false;
+        sr.flipX = velocity.x < 0;
     }
 
-    //add collision detectioin functions for the projectile to interact with the environemnt and other objects, such as damaging enemies or being destroyed 
-    //on impact with walls
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //this ensures the projectile doesn't destroy within the playercollider
+        if (collision.gameObject.CompareTag("Player"))
+            return;
+
+        Destroy(gameObject);
+    }
 }
