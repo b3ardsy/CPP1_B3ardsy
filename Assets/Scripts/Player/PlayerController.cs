@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
 
     private bool jumpPressed;
     private bool aimInput;
-    private bool shootInput;
 
     private bool _isGrounded;
     private Vector2 groundNormal = Vector2.up;
@@ -38,6 +37,8 @@ public class PlayerController : MonoBehaviour
     private bool isClimbing;
 
     private float startingGravity;
+
+    private bool _isFiring;
 
     void Start()
     {
@@ -59,14 +60,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        AnimatorClipInfo[] clipInfo = anim.GetCurrentAnimatorClipInfo(0);
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+        bool fireInput = Input.GetButtonDown("Fire1");
 
         if (Input.GetButtonDown("Jump"))
             jumpPressed = true;
 
         aimInput = Input.GetMouseButton(1);
-        shootInput = Input.GetMouseButtonDown(0);
+        
 
         if (horizontalInput != 0)
             SpriteFlip(horizontalInput);
@@ -85,8 +88,11 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isOnLadder", isOnLadder);
         anim.SetBool("isClimbing", isClimbing);
 
-        if (shootInput)
-            anim.SetTrigger("shoot");
+        if (fireInput && clipInfo[0].clip.name != "Fire")
+        {
+            anim.SetTrigger("Fire");
+        }
+ 
     }
 
     void FixedUpdate()

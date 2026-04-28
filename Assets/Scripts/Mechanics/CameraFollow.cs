@@ -45,6 +45,6 @@ public class CameraFollow : MonoBehaviour
         //transform.position = currentPos;
 
         //Alt method below:
-        transform.position = Vector3.MoveTowards(transform.position, currentPos, 5f * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, currentPos, 10f * Time.deltaTime);
     }
 }
