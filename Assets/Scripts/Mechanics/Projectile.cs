@@ -15,7 +15,16 @@ public class Projectile : MonoBehaviour
 
     public void SetVelocity(Vector2 velocity)
     {
-        GetComponent<Rigidbody2D>().linearVelocity = velocity;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = velocity;
+
+        // Flip sprite based on direction
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+
+        if (velocity.x < 0)
+            sr.flipX = true;
+        else
+            sr.flipX = false;
     }
 
     //add collision detectioin functions for the projectile to interact with the environemnt and other objects, such as damaging enemies or being destroyed 

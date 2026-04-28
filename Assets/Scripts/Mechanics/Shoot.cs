@@ -27,20 +27,21 @@ public class Shoot : MonoBehaviour
         }
     }
 
-  public void Fire()
+    public void Fire()
     {
         Projectile curProjectile;
+
+        float direction = sr.flipX ? -1f : 1f;
 
         if (!sr.flipX)
         {
             curProjectile = Instantiate(projectilePrefab, spawnPointRight.position, Quaternion.identity);
-            curProjectile.SetVelocity(initialShotVelocity);
         }
         else
         {
             curProjectile = Instantiate(projectilePrefab, spawnPointLeft.position, Quaternion.identity);
-            curProjectile.SetVelocity(initialShotVelocity);
         }
-        
+
+        curProjectile.SetVelocity(initialShotVelocity * direction);
     }
 }
