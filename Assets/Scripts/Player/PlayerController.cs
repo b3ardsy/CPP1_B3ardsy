@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
+    private GroundCheck groundCheck;
+
     private float horizontalInput;
     private float verticalInput;
 
@@ -44,6 +46,14 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
+        groundCheck = new GroundCheck(
+            col,
+            rb,
+            groundRayLength,
+            maxSlopeAngle,
+            groundLayer
+        );
+
         startingGravity = rb.gravityScale;
     }
 
@@ -61,13 +71,11 @@ public class PlayerController : MonoBehaviour
         if (horizontalInput != 0)
             SpriteFlip(horizontalInput);
 
-        // Press W/S while touching ladder to attach to it
         if (isTouchingLadder && Mathf.Abs(verticalInput) > 0f)
         {
             isOnLadder = true;
         }
 
-        // Climbing animation only plays while actively pressing W/S
         isClimbing = isOnLadder && Mathf.Abs(verticalInput) > 0f;
 
         anim.SetFloat("horizontalInput", Mathf.Abs(horizontalInput));
@@ -83,7 +91,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        CheckGround();
+        groundCheck.Check();
+
+        _isGrounded = groundCheck.IsGrounded;
+        groundNormal = groundCheck.GroundNormal;
 
         if (isOnLadder)
         {
@@ -103,42 +114,16 @@ public class PlayerController : MonoBehaviour
         jumpPressed = false;
     }
 
-    void CheckGround()
-    {
-        Bounds bounds = col.bounds;
-
-        Vector2 rayOrigin = new Vector2(bounds.center.x, bounds.min.y + 0.05f);
-
-        RaycastHit2D hit = Physics2D.Raycast(
-            rayOrigin,
-            Vector2.down,
-            groundRayLength,
-            groundLayer
-        );
-
-        if (hit.collider != null)
-        {
-            float slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
-
-            _isGrounded = slopeAngle <= maxSlopeAngle;
-            groundNormal = hit.normal;
-        }
-        else
-        {
-            _isGrounded = false;
-            groundNormal = Vector2.up;
-        }
-
-        Debug.DrawRay(rayOrigin, Vector2.down * groundRayLength, Color.red);
-    }
-
     void Move()
     {
         rb.gravityScale = startingGravity;
 
         if (_isGrounded)
         {
-            Vector2 slopeDirection = new Vector2(groundNormal.y, -groundNormal.x);
+            Vector2 slopeDirection = new Vector2(
+                groundNormal.y,
+                -groundNormal.x
+            );
 
             if (horizontalInput < 0)
                 slopeDirection *= -1;
