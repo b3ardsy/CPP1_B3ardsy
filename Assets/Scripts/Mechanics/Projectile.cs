@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour
         //this ensures the projectile doesn't destroy within the playercollider
         if (collision.gameObject.CompareTag("Player"))
             return;
-
+        //destroys projectile after colliding with anything else
         Destroy(gameObject);
     }
 }

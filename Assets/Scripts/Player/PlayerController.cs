@@ -76,17 +76,22 @@ public class PlayerController : MonoBehaviour
 
         isClimbing = isOnLadder && Mathf.Abs(verticalInput) > 0f;
 
+        UpdateAnims();
+
+        if (fireInput && clipInfo[0].clip.name != "Fire")
+        {
+            anim.SetTrigger("Fire");
+        }
+    }
+
+    private void UpdateAnims()
+    {
         anim.SetFloat("horizontalInput", Mathf.Abs(horizontalInput));
         anim.SetBool("isGrounded", _isGrounded);
         anim.SetFloat("yVel", rb.linearVelocityY);
         anim.SetBool("isAiming", aimInput);
         anim.SetBool("isOnLadder", isOnLadder);
         anim.SetBool("isClimbing", isClimbing);
-
-        if (fireInput && clipInfo[0].clip.name != "Fire")
-        {
-            anim.SetTrigger("Fire");
-        }
     }
 
     void FixedUpdate()
