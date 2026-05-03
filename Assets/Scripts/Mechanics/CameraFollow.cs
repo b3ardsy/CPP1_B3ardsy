@@ -1,23 +1,24 @@
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-
+    [Header("X Bounds")]
     [SerializeField] private float minXPos;
     [SerializeField] private float maxXPos;
 
+    [Header("Follow Target")]
     [SerializeField] private Transform target;
 
+    [Header("Camera Feel")]
+    [SerializeField] private float followSpeed = 10f;
+    [SerializeField] private float yOffset = 2f; // headroom above the player
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Make code defensive against bad input!
-
         if (target == null)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
+
             if (player == null)
             {
                 Debug.LogError("CameraFollow: No target assigned and no GameObject with tag 'Player' exists.");
@@ -28,23 +29,25 @@ public class CameraFollow : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        //early return - if we don't have a target we can't follow anything so we should exit the method.
-
         if (target == null) return;
 
-        //Store our current position
-        Vector3 currentPos = transform.position;
+        Vector3 targetCameraPos = transform.position;
 
-        //update the X position to be the same as the target's x position, but clamped between our min and max X values
-        currentPos.x = Mathf.Clamp(target.position.x, minXPos, maxXPos);
+        // Follow X, but keep it clamped between min/max.
+        targetCameraPos.x = Mathf.Clamp(target.position.x, minXPos, maxXPos);
 
-        //apply the updated position to the camera
-        //transform.position = currentPos;
+        // Follow Y with some headroom above the player.
+        targetCameraPos.y = target.position.y + yOffset;
 
-        //Alt method below:
-        transform.position = Vector3.MoveTowards(transform.position, currentPos, 10f * Time.deltaTime);
+        // Keep camera Z unchanged.
+        targetCameraPos.z = transform.position.z;
+
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            targetCameraPos,
+            followSpeed * Time.deltaTime
+        );
     }
 }
