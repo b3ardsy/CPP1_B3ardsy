@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class PlayerController : MonoBehaviour
 {
+    #region Settings and Configurable Variables
     [Header("Ground Check")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundRayLength = 0.15f;
@@ -15,6 +16,12 @@ public class PlayerController : MonoBehaviour
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
 
+    //[Header("Powerup Settings")]
+    //[SerializeField] public float jumpForcePowerUp = 15f;
+
+    #endregion
+
+    #region Component References
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
     private SpriteRenderer sr;
@@ -36,6 +43,9 @@ public class PlayerController : MonoBehaviour
     //private bool isClimbing;
 
     private float startingGravity;
+
+    //private bool isFireArrow = false;
+    #endregion
 
     void Start()
     {
