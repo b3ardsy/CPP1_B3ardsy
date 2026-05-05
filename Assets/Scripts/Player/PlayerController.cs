@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     #region Settings and Configurable Variables
+
     [Header("Ground Check")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundRayLength = 0.15f;
@@ -16,12 +17,73 @@ public class PlayerController : MonoBehaviour
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
 
+    [Header("Player Settings")]
+    [SerializeField] private int maxLives = 9;
+    [SerializeField] private int maxSpecialAmmo = 20;
+
     //[Header("Powerup Settings")]
-    //[SerializeField] public float jumpForcePowerUp = 15f;
+    //[SerializeField] private float jumpForcePowerup = 15f;
+
+    #endregion
+
+    #region State Variables
+
+    private int _lives = 3;
+
+    public int lives
+    {
+        get { return _lives; }
+        set
+        {
+            if (value > maxLives)
+                _lives = maxLives;
+            else if (value < 0)
+                _lives = 0;
+            else
+                _lives = value;
+
+            Debug.Log($"Lives have changed to {_lives}");
+        }
+    }
+
+    private int _specialAmmo = 5;
+
+    public int specialAmmo
+    {
+        get { return _specialAmmo; }
+        set
+        {
+            if (value > maxSpecialAmmo)
+                _specialAmmo = maxSpecialAmmo;
+            else if (value < 0)
+                _specialAmmo = 0;
+            else
+                _specialAmmo = value;
+
+            Debug.Log($"Special Ammo has changed to {_specialAmmo}");
+        }
+    }
+
+    private int _bountyTokens = 0;
+
+    public int bountyTokens
+    {
+        get { return _bountyTokens; }
+        set
+        {
+            _bountyTokens = Mathf.Max(0, value);
+            Debug.Log($"Bounty Tokens have changed to {_bountyTokens}");
+        }
+    }
+
+    private bool hasRoll = false;
+    private bool hasFireArrow = false;
+    private bool hasIceArrow = false;
 
     #endregion
 
     #region Component References
+
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
     private SpriteRenderer sr;
@@ -40,11 +102,9 @@ public class PlayerController : MonoBehaviour
 
     private bool isTouchingLadder;
     private bool isOnLadder;
-    //private bool isClimbing;
 
     private float startingGravity;
 
-    //private bool isFireArrow = false;
     #endregion
 
     void Start()
@@ -69,13 +129,9 @@ public class PlayerController : MonoBehaviour
         CheckGround();
 
         if (isOnLadder)
-        {
             LadderMovement();
-        }
         else
-        {
             GroundMovement();
-        }
 
         Jump();
 
@@ -106,9 +162,7 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("Jump"))
-        {
             jumpPressed = true;
-        }
 
         firePressed = Input.GetButtonDown("Fire1");
         aimInput = Input.GetMouseButton(1);
@@ -126,8 +180,6 @@ public class PlayerController : MonoBehaviour
         {
             isOnLadder = true;
         }
-
-        //isClimbing = isOnLadder && Mathf.Abs(verticalInput) > 0f;
     }
 
     private void GroundMovement()
@@ -171,7 +223,6 @@ public class PlayerController : MonoBehaviour
     private void JumpOffLadder()
     {
         isOnLadder = false;
-        //isClimbing = false;
 
         rb.gravityScale = startingGravity;
         rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
@@ -209,6 +260,30 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("climbAnimSpeed", verticalInput);
     }
 
+    public void JumpForceChange()
+    {
+        // Not using this yet
+        // jumpForce = jumpForcePowerup;
+    }
+
+    public void PickUpRoll()
+    {
+        hasRoll = true;
+        Debug.Log("Roll unlocked");
+    }
+
+    public void PickUpFireArrow()
+    {
+        hasFireArrow = true;
+        Debug.Log("Fire Arrow unlocked");
+    }
+
+    public void PickUpIceArrow()
+    {
+        hasIceArrow = true;
+        Debug.Log("Ice Arrow unlocked");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         LadderTriggerEnter(collision);
@@ -239,7 +314,6 @@ public class PlayerController : MonoBehaviour
     {
         isTouchingLadder = false;
         isOnLadder = false;
-        //isClimbing = false;
 
         rb.gravityScale = startingGravity;
     }
