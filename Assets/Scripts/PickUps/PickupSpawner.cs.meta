@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2f361545d444676478ad37af5e516efa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - lifePrefab: {fileID: 1184210135759920338, guid: ffe1b9b488d2da0499eaf8ff8b1d9063, type: 3}
+  - specialAmmoPrefab: {fileID: 1855249322650219418, guid: 49c3f0680e277d346a783e50fd7d9cf8, type: 3}
+  - fireArrowPrefab: {fileID: 7312652482222837960, guid: d8753fb62684bf04d9042c61af089623, type: 3}
+  - iceArrowPrefab: {fileID: 3255396855256374888, guid: 1c1e80615d317434eb199417a19966c1, type: 3}
+  - rollPrefab: {fileID: 8825754255799917566, guid: 9b148a9bc620a4346b1c8397aaaaf991, type: 3}
+  - bountyTokenPrefab: {fileID: 5422261704932370873, guid: 514559dca71b80040aa5622e3b6175c2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
