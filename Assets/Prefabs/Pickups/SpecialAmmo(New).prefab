@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8477585030737086182}
   - component: {fileID: 9172514487225546328}
   - component: {fileID: 4226078786170493447}
+  - component: {fileID: 2931263795358099827}
   m_Layer: 0
   m_Name: SpecialAmmo(New)
   m_TagString: Untagged
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.84391326, b: 0.18431371, a: 1}
+  m_Color: {r: 1, g: 0.18431371, b: 0.27090496, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -167,6 +168,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2931263795358099827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855249322650219418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8117f364d7c7532449d6e08dc9bd3024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpecialAmmo
+  ammoToAdd: 1
 --- !u!1 &2758987520598213604
 GameObject:
   m_ObjectHideFlags: 0
