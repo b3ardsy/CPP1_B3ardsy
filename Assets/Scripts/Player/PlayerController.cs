@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         set
         {
             _bountyTokens = Mathf.Max(0, value);
-            Debug.Log($"Bounty Tokens have changed to {_bountyTokens}");
+            Debug.Log($"Bounty Tokens Acquired {_bountyTokens}");
         }
     }
 
