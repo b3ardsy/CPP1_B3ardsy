@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float climbSpeed = 5f;
 
     [Header("Player Settings")]
-    [SerializeField] private int maxLives = 9;
+    [SerializeField] private int maxHealthTanks = 9;
     [SerializeField] private int maxSpecialAmmo = 20;
 
     //[Header("Powerup Settings")]
@@ -28,21 +28,21 @@ public class PlayerController : MonoBehaviour
 
     #region State Variables
 
-    private int _lives = 3;
+    private int _healthTank = 3;
 
-    public int lives
+    public int healthTank
     {
-        get { return _lives; }
+        get { return _healthTank; }
         set
         {
-            if (value > maxLives)
-                _lives = maxLives;
+            if (value > maxHealthTanks)
+                _healthTank = maxHealthTanks;
             else if (value < 0)
-                _lives = 0;
+                _healthTank = 0;
             else
-                _lives = value;
+                _healthTank = value;
 
-            Debug.Log($"Lives have changed to {_lives}");
+            Debug.Log($"Health Tanks have changed to {_healthTank}");
         }
     }
 
@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
     private bool hasRoll = false;
     private bool hasFireArrow = false;
     private bool hasIceArrow = false;
+    private bool hasKey = false;
 
     #endregion
 
@@ -282,6 +283,12 @@ public class PlayerController : MonoBehaviour
     {
         hasIceArrow = true;
         Debug.Log("Ice Arrow unlocked");
+    }
+
+    public void PickUpKey()
+    {
+        hasKey = true;
+        Debug.Log("Key acquired");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

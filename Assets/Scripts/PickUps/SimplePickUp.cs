@@ -1,58 +1,58 @@
-using UnityEngine;
+//using UnityEngine;
 
-public class SimplePickUp : MonoBehaviour
-{
-    public enum PickupType
-    {
-        Health = 0,
-        SpecialAmmo = 1,
-        JumpBoost = 2,
-        Roll = 3,
-        FireArrow = 4,
-        IceArrow = 5,
-        BountyToken = 6,
-    }
+//public class SimplePickUp : MonoBehaviour
+//{
+//    public enum PickupType
+//    {
+//        Health = 0,
+//        SpecialAmmo = 1,
+//        JumpBoost = 2,
+//        Roll = 3,
+//        FireArrow = 4,
+//        IceArrow = 5,
+//        BountyToken = 6,
+//    }
 
-    [SerializeField] private PickupType type;
+//    [SerializeField] private PickupType type;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            PlayerController controller = collision.GetComponent<PlayerController>();
+//    private void OnTriggerEnter2D(Collider2D collision)
+//    {
+//        if (collision.CompareTag("Player"))
+//        {
+//            PlayerController controller = collision.GetComponent<PlayerController>();
 
-            switch (type)
-            {
-                case PickupType.Health:
-                    controller.lives++;
-                    break;
+//            switch (type)
+//            {
+//                case PickupType.Health:
+//                    controller.lives++;
+//                    break;
 
-                case PickupType.SpecialAmmo:
-                    controller.specialAmmo++;
-                    break;
+//                case PickupType.SpecialAmmo:
+//                    controller.specialAmmo++;
+//                    break;
 
-                case PickupType.JumpBoost:
-                    controller.JumpForceChange();
-                    break;
+//                case PickupType.JumpBoost:
+//                    controller.JumpForceChange();
+//                    break;
 
-                case PickupType.Roll:
-                    controller.PickUpRoll();
-                    break;
+//                case PickupType.Roll:
+//                    controller.PickUpRoll();
+//                    break;
 
-                case PickupType.FireArrow:
-                    controller.PickUpFireArrow();
-                    break;
+//                case PickupType.FireArrow:
+//                    controller.PickUpFireArrow();
+//                    break;
 
-                case PickupType.IceArrow:
-                    controller.PickUpIceArrow();
-                    break;
+//                case PickupType.IceArrow:
+//                    controller.PickUpIceArrow();
+//                    break;
 
-                case PickupType.BountyToken:
-                    controller.bountyTokens++;
-                    break;
-            }
+//                case PickupType.BountyToken:
+//                    controller.bountyTokens++;
+//                    break;
+//            }
 
-            Destroy(gameObject);
-        }
-    }
-}
+//            Destroy(gameObject);
+//        }
+//    }
+//}

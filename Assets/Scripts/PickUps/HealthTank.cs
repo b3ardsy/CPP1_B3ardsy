@@ -1,34 +1,35 @@
 using UnityEngine;
 
-public class Roll : PickUp
+public class HealthTank : PickUp
 {
+    [SerializeField] private int healthTank = 1;
+
     [Header("Hover Settings")]
     [SerializeField] private float hoverHeight = 0.25f;
+
     [SerializeField] private float hoverSpeed = 2f;
 
-    [Header("Roll Settings")]
-    [SerializeField] private float rollSpeed = 1200f;
+    [Header("Flip Settings")]
+    [SerializeField] private float flipSpeed = 2f;
 
     private Vector3 startPosition;
-    private Rigidbody2D rb;
+    private Vector3 startScale;
 
     public override void OnPickup(GameObject player)
     {
-        player.GetComponent<PlayerController>().PickUpRoll();
+        player.GetComponent<PlayerController>().healthTank += healthTank;
     }
 
     void Start()
     {
         startPosition = transform.position;
-        rb = GetComponent<Rigidbody2D>();
-
-        rb.gravityScale = 0f;
-        rb.angularVelocity = -rollSpeed;
+        startScale = transform.localScale;
     }
 
     void Update()
     {
         Hover();
+        FlipPickup();
     }
 
     private void Hover()
@@ -39,6 +40,17 @@ public class Roll : PickUp
             startPosition.x,
             startPosition.y + yOffset,
             startPosition.z
+        );
+    }
+
+    private void FlipPickup()
+    {
+        float scaleX = Mathf.Sin(Time.time * flipSpeed);
+
+        transform.localScale = new Vector3(
+            scaleX * startScale.x,
+            startScale.y,
+            startScale.z
         );
     }
 }
