@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [Header("Roll")]
     [SerializeField] private float rollSpeed = 15f;
     [SerializeField] private float rollDuration = 0.35f;
+    [SerializeField] private Vector2 rollingColliderSize = new Vector2(0.706f, 0.8f);
+    [SerializeField] private Vector2 rollingColliderOffset = new Vector2(-0.027f, 0.4f);
 
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
@@ -85,6 +87,9 @@ public class PlayerController : MonoBehaviour
     private bool isRolling;
     private float rollTimer;
 
+    private Vector2 standingColliderSize;
+    private Vector2 standingColliderOffset;
+
     #endregion
 
     #region Component References
@@ -119,6 +124,9 @@ public class PlayerController : MonoBehaviour
         SetupGroundCheck();
 
         startingGravity = rb.gravityScale;
+
+        standingColliderSize = col.size;
+        standingColliderOffset = col.offset;
     }
 
     void Update()
@@ -292,6 +300,8 @@ public class PlayerController : MonoBehaviour
             if (rollTimer <= 0f)
             {
                 isRolling = false;
+                col.size = standingColliderSize;
+                col.offset = standingColliderOffset;
             }
 
             return;
@@ -301,6 +311,9 @@ public class PlayerController : MonoBehaviour
         {
             isRolling = true;
             rollTimer = rollDuration;
+
+            col.size = rollingColliderSize;
+            col.offset = rollingColliderOffset;
 
             anim.SetTrigger("Roll");
         }
