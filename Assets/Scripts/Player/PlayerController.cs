@@ -14,15 +14,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 5f;
 
+    [Header("Roll")]
+    [SerializeField] private float rollSpeed = 15f;
+    [SerializeField] private float rollDuration = 0.35f;
+
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
 
     [Header("Player Settings")]
     [SerializeField] private int maxHealthTanks = 9;
     [SerializeField] private int maxSpecialAmmo = 20;
-
-    //[Header("Powerup Settings")]
-    //[SerializeField] private float jumpForcePowerup = 15f;
 
     #endregion
 
@@ -81,6 +82,9 @@ public class PlayerController : MonoBehaviour
     private bool hasIceArrow = false;
     private bool hasKey = false;
 
+    private bool isRolling;
+    private float rollTimer;
+
     #endregion
 
     #region Component References
@@ -98,6 +102,7 @@ public class PlayerController : MonoBehaviour
     private bool jumpPressed;
     private bool firePressed;
     private bool aimInput;
+    private bool rollPressed;
 
     private bool _isGrounded;
 
@@ -122,6 +127,7 @@ public class PlayerController : MonoBehaviour
         MovementState();
         SpriteFlipping();
         FireAttack();
+        Roll();
         UpdateAnims();
     }
 
@@ -167,6 +173,7 @@ public class PlayerController : MonoBehaviour
 
         firePressed = Input.GetButtonDown("Fire1");
         aimInput = Input.GetMouseButton(1);
+        rollPressed = Input.GetKeyDown(KeyCode.LeftShift);
     }
 
     private void CheckGround()
@@ -185,6 +192,9 @@ public class PlayerController : MonoBehaviour
 
     private void GroundMovement()
     {
+        if (isRolling)
+            return;
+
         rb.gravityScale = startingGravity;
 
         rb.linearVelocity = new Vector2(
@@ -195,6 +205,9 @@ public class PlayerController : MonoBehaviour
 
     private void LadderMovement()
     {
+        if (isRolling)
+            return;
+
         rb.gravityScale = 0f;
 
         rb.linearVelocity = new Vector2(
@@ -205,6 +218,9 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        if (isRolling)
+            return;
+
         if (!jumpPressed)
             return;
 
@@ -232,6 +248,9 @@ public class PlayerController : MonoBehaviour
 
     private void SpriteFlipping()
     {
+        if (isRolling)
+            return;
+
         if (horizontalInput == 0)
             return;
 
@@ -240,6 +259,9 @@ public class PlayerController : MonoBehaviour
 
     private void FireAttack()
     {
+        if (isRolling)
+            return;
+
         if (!firePressed)
             return;
 
@@ -248,6 +270,39 @@ public class PlayerController : MonoBehaviour
         if (clipInfo.Length > 0 && clipInfo[0].clip.name != "Fire")
         {
             anim.SetTrigger("Fire");
+        }
+    }
+
+    private void Roll()
+    {
+        if (!hasRoll)
+            return;
+
+        if (isRolling)
+        {
+            rollTimer -= Time.deltaTime;
+
+            float direction = sr.flipX ? -1f : 1f;
+
+            rb.linearVelocity = new Vector2(
+                direction * rollSpeed,
+                rb.linearVelocityY
+            );
+
+            if (rollTimer <= 0f)
+            {
+                isRolling = false;
+            }
+
+            return;
+        }
+
+        if (rollPressed && _isGrounded && !isOnLadder)
+        {
+            isRolling = true;
+            rollTimer = rollDuration;
+
+            anim.SetTrigger("Roll");
         }
     }
 
@@ -264,7 +319,6 @@ public class PlayerController : MonoBehaviour
     public void JumpForceChange()
     {
         // Not using this yet
-        // jumpForce = jumpForcePowerup;
     }
 
     public void PickUpRoll()
