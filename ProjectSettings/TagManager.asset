@@ -8,11 +8,14 @@ TagManager:
   - Enemy
   - Ladder
   - BasicArrow
+  - FireArrow
+  - IceArrow
+  - Barrier
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Environment
   - Water
   - UI
   - groundLayer
@@ -48,8 +51,17 @@ TagManager:
   - name: Ground
     uniqueID: 789531461
     locked: 0
+  - name: Environment
+    uniqueID: 1320976801
+    locked: 0
   - name: PlayArea
     uniqueID: 3335911267
+    locked: 0
+  - name: Foreground
+    uniqueID: 2106061287
+    locked: 0
+  - name: UI
+    uniqueID: 701340049
     locked: 0
   m_RenderingLayers:
   - Default

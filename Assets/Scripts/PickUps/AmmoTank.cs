@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class AmmoTank : PickUp
 {
-    [SerializeField] private int ammoTank = 1;
+    private bool hasBeenPickedUp = false;
 
     [Header("Hover Settings")]
     [SerializeField] private float hoverHeight = 0.25f;
-
     [SerializeField] private float hoverSpeed = 2f;
 
     [Header("Flip Settings")]
@@ -17,7 +16,14 @@ public class AmmoTank : PickUp
 
     public override void OnPickup(GameObject player)
     {
-        player.GetComponent<PlayerController>().specialAmmo += ammoTank;
+        if (hasBeenPickedUp)
+            return;
+
+        hasBeenPickedUp = true;
+
+        player.GetComponent<PlayerController>().PickUpAmmoTank();
+
+        Destroy(gameObject);
     }
 
     void Start()

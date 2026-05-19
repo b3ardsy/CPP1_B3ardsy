@@ -6,6 +6,10 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField, Range(0.05f, 10f)] private float lifetime = 10f;
 
+    [Header("Damage")]
+    [SerializeField] private int damage = 1;
+    [SerializeField] private DamageType damageType = DamageType.Default;
+
     void Start()
     {
         Destroy(gameObject, lifetime);
@@ -22,10 +26,22 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //this ensures the projectile doesn't destroy within the playercollider
         if (collision.gameObject.CompareTag("Player"))
             return;
-        //destroys projectile after colliding with anything else
+
+        BaseEnemy enemy = collision.gameObject.GetComponent<BaseEnemy>();
+
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage, damageType);
+        }
+
         Destroy(gameObject);
     }
+}
+
+public enum ProjectileType
+{
+    PlayerProjectile,
+    EnemyProjectile
 }

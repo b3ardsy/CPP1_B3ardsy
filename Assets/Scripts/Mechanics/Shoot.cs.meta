@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 002f11b7c3db4cb448856ec1a5e64af3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spawnPointLeft: {instanceID: 0}
+  - spawnPointRight: {instanceID: 0}
+  - basicArrowPrefab: {fileID: 7703277693943547760, guid: 0101bca3a76ada347954eaebac44c3d3, type: 3}
+  - fireArrowPrefab: {fileID: 7703277693943547760, guid: 67d7dd9ef6f8ddc41aeb58530709620f, type: 3}
+  - iceArrowPrefab: {fileID: 7703277693943547760, guid: caefa68f034ddd744bd9e69cf91223e8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

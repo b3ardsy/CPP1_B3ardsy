@@ -11,8 +11,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundRayLength = 0.15f;
 
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float moveSpeed = 8f;
+    [SerializeField] private float acceleration = 80f;
+    [SerializeField] private float deceleration = 100f;
+
+    [Header("Jump")]
+    [SerializeField] private float jumpForce = 18f;
+    [SerializeField] private float fallMultiplier = 2.8f;
+    [SerializeField] private float lowJumpMultiplier = 2.2f;
+    [SerializeField] private float coyoteTime = 0.12f;
+    [SerializeField] private float jumpBufferTime = 0.12f;
 
     [Header("Roll")]
     [SerializeField] private float rollSpeed = 15f;
@@ -25,7 +33,11 @@ public class PlayerController : MonoBehaviour
 
     [Header("Player Settings")]
     [SerializeField] private int maxHealthTanks = 9;
-    [SerializeField] private int maxSpecialAmmo = 20;
+
+    [Header("Special Ammo")]
+    [SerializeField] private int startingSpecialAmmoCapacity = 5;
+    [SerializeField] private int maxSpecialAmmoCapacity = 20;
+    [SerializeField] private int specialAmmoUpgradeAmount = 5;
 
     #endregion
 
@@ -49,21 +61,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private int _specialAmmo = 5;
+    private int currentSpecialAmmoCapacity;
+    private int _specialAmmo;
 
     public int specialAmmo
     {
         get { return _specialAmmo; }
         set
         {
-            if (value > maxSpecialAmmo)
-                _specialAmmo = maxSpecialAmmo;
+            if (value > currentSpecialAmmoCapacity)
+                _specialAmmo = currentSpecialAmmoCapacity;
             else if (value < 0)
                 _specialAmmo = 0;
             else
                 _specialAmmo = value;
 
-            Debug.Log($"Special Ammo has changed to {_specialAmmo}");
+            Debug.Log($"Special Ammo has changed to {_specialAmmo}/{currentSpecialAmmoCapacity}");
         }
     }
 
@@ -84,11 +97,40 @@ public class PlayerController : MonoBehaviour
     private bool hasIceArrow = false;
     private bool hasKey = false;
 
+    public bool HasRoll { get { return hasRoll; } }
+    public bool HasFireArrow { get { return hasFireArrow; } }
+    public bool HasIceArrow { get { return hasIceArrow; } }
+    public bool HasKey { get { return hasKey; } }
+
+    public bool TrySpendSpecialAmmo(int amount)
+    {
+        if (specialAmmo < amount)
+            return false;
+
+        specialAmmo -= amount;
+        return true;
+    }
+
+    public void PickUpAmmoTank()
+    {
+        currentSpecialAmmoCapacity += specialAmmoUpgradeAmount;
+
+        if (currentSpecialAmmoCapacity > maxSpecialAmmoCapacity)
+            currentSpecialAmmoCapacity = maxSpecialAmmoCapacity;
+
+        specialAmmo = currentSpecialAmmoCapacity;
+
+        Debug.Log($"Ammo capacity upgraded. Special Ammo: {specialAmmo}/{currentSpecialAmmoCapacity}");
+    }
+
     private bool isRolling;
     private float rollTimer;
 
     private Vector2 standingColliderSize;
     private Vector2 standingColliderOffset;
+
+    private float coyoteTimeCounter;
+    private float jumpBufferCounter;
 
     #endregion
 
@@ -104,7 +146,6 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-    private bool jumpPressed;
     private bool firePressed;
     private bool aimInput;
     private bool rollPressed;
@@ -123,6 +164,9 @@ public class PlayerController : MonoBehaviour
         GetComponents();
         SetupGroundCheck();
 
+        currentSpecialAmmoCapacity = startingSpecialAmmoCapacity;
+        specialAmmo = currentSpecialAmmoCapacity;
+
         startingGravity = rb.gravityScale;
 
         standingColliderSize = col.size;
@@ -132,6 +176,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         ReadInput();
+        UpdateJumpTimers();
         MovementState();
         SpriteFlipping();
         FireAttack();
@@ -144,13 +189,16 @@ public class PlayerController : MonoBehaviour
         CheckGround();
 
         if (isOnLadder)
+        {
             LadderMovement();
+        }
         else
+        {
             GroundMovement();
+            ApplyJumpGravity();
+        }
 
         Jump();
-
-        jumpPressed = false;
     }
 
     private void GetComponents()
@@ -177,11 +225,22 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("Jump"))
-            jumpPressed = true;
+            jumpBufferCounter = jumpBufferTime;
 
         firePressed = Input.GetButtonDown("Fire1");
         aimInput = Input.GetMouseButton(1);
         rollPressed = Input.GetKeyDown(KeyCode.LeftShift);
+    }
+
+    private void UpdateJumpTimers()
+    {
+        if (_isGrounded)
+            coyoteTimeCounter = coyoteTime;
+        else
+            coyoteTimeCounter -= Time.deltaTime;
+
+        if (jumpBufferCounter > 0f)
+            jumpBufferCounter -= Time.deltaTime;
     }
 
     private void CheckGround()
@@ -205,10 +264,18 @@ public class PlayerController : MonoBehaviour
 
         rb.gravityScale = startingGravity;
 
-        rb.linearVelocity = new Vector2(
-            horizontalInput * moveSpeed,
-            rb.linearVelocityY
+        float targetSpeed = horizontalInput * moveSpeed;
+
+        float newXVelocity = Mathf.MoveTowards(
+            rb.linearVelocityX,
+            targetSpeed,
+            (Mathf.Abs(horizontalInput) > 0.01f ? acceleration : deceleration) * Time.fixedDeltaTime
         );
+
+        if (Mathf.Abs(horizontalInput) < 0.01f && Mathf.Abs(newXVelocity) < 0.05f)
+            newXVelocity = 0f;
+
+        rb.linearVelocity = new Vector2(newXVelocity, rb.linearVelocityY);
     }
 
     private void LadderMovement()
@@ -229,20 +296,24 @@ public class PlayerController : MonoBehaviour
         if (isRolling)
             return;
 
-        if (!jumpPressed)
+        if (jumpBufferCounter <= 0f)
             return;
 
         if (isOnLadder)
         {
             JumpOffLadder();
+            jumpBufferCounter = 0f;
             return;
         }
 
-        if (!_isGrounded)
+        if (coyoteTimeCounter <= 0f)
             return;
 
         rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        jumpBufferCounter = 0f;
+        coyoteTimeCounter = 0f;
     }
 
     private void JumpOffLadder()
@@ -252,6 +323,21 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = startingGravity;
         rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    }
+
+    private void ApplyJumpGravity()
+    {
+        if (isRolling || isOnLadder)
+            return;
+
+        if (rb.linearVelocityY < 0)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1f) * Time.fixedDeltaTime;
+        }
+        else if (rb.linearVelocityY > 0 && !Input.GetButton("Jump"))
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.fixedDeltaTime;
+        }
     }
 
     private void SpriteFlipping()
