@@ -15,12 +15,15 @@ public class WalkerEnemy : BaseEnemy
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
 
-        // Optional but useful for enemies that should not rotate/fall over
+        // Stops the enemy from tipping/rotating
         rb.freezeRotation = true;
     }
 
     void FixedUpdate()
     {
+        if (IsDead)
+            return;
+
         float direction = sr.flipX ? 1f : -1f;
 
         rb.linearVelocity = new Vector2(direction * xVel, rb.linearVelocityY);
@@ -28,6 +31,9 @@ public class WalkerEnemy : BaseEnemy
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (IsDead)
+            return;
+
         if (collision.CompareTag("Barrier"))
         {
             TurnAround();
@@ -37,10 +43,5 @@ public class WalkerEnemy : BaseEnemy
     private void TurnAround()
     {
         sr.flipX = !sr.flipX;
-    }
-
-    public override void TakeDamage(int damage, DamageType damageType = DamageType.Default)
-    {
-        base.TakeDamage(damage, damageType);
     }
 }

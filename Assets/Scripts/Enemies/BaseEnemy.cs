@@ -3,15 +3,16 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
 public abstract class BaseEnemy : MonoBehaviour
 {
-
     protected SpriteRenderer sr;
     protected Animator anim;
     protected int health;
 
-    [SerializeField] protected int maxHealth = 5; 
+    [SerializeField] protected int maxHealth = 5;
 
+    protected bool isDead = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool IsDead => isDead;
+
     public virtual void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -21,29 +22,57 @@ public abstract class BaseEnemy : MonoBehaviour
         {
             maxHealth = 5;
         }
+
         health = maxHealth;
     }
 
     public virtual void TakeDamage(int damage, DamageType damageType = DamageType.Default)
     {
+        if (isDead)
+            return;
+
         health -= damage;
 
         if (health <= 0)
         {
-            anim.SetTrigger("Death");
+            Die();
+        }
+        else
+        {
+            anim.SetTrigger("Hit");
+        }
+    }
 
-            if (transform.parent != null)
-            {
-                Destroy(transform.parent.gameObject, 5f);
-            }
-            else
-                Destroy(gameObject, 0.5f);
+    protected virtual void Die()
+    {
+        isDead = true;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        anim.SetTrigger("Death");
+    }
+
+    public virtual void DestroyEnemy()
+    {
+        if (transform.parent != null)
+        {
+            Destroy(transform.parent.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 }
 
 public enum DamageType
 {
-    Default, 
+    Default,
     JumpedOn
 }

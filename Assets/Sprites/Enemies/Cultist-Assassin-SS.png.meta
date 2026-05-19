@@ -363,7 +363,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2326,7 +2326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist-Assassin-SS_87
+      name: Walker_Hit
       rect:
         serializedVersion: 2
         x: 106
@@ -2536,7 +2536,6 @@ TextureImporter:
       Cultist-Assassin-SS_84: 206029222690736539
       Cultist-Assassin-SS_85: 1817289466632801537
       Cultist-Assassin-SS_86: 5019930982533486382
-      Cultist-Assassin-SS_87: 5735782024774787990
       Cultist-Assassin-SS_88: -5791090683248817462
       Cultist-Assassin-SS_89: 1629110153026238346
       Cultist-Assassin-SS_90: -8510709542887866068
@@ -2558,6 +2557,7 @@ TextureImporter:
       Walker_Death7: -2349189637222457189
       Walker_Death8: 7471324620188308388
       Walker_Death9: -2744006673420018473
+      Walker_Hit: 5735782024774787990
       Walker_Walk1: -8465329445154386599
       Walker_Walk2: 8968137606014001735
       Walker_Walk3: -51197978163787067
