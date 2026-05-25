@@ -49,8 +49,8 @@ public class EnemyShoot : MonoBehaviour
         if (fireballPrefab == null)
             return;
 
-        float direction = sr.flipX ? -1f : 1f;
-        Transform spawnPoint = sr.flipX ? spawnPointLeft : spawnPointRight;
+        Transform spawnPoint = sr.flipX ? spawnPointRight : spawnPointLeft;
+        float direction = sr.flipX ? 1f : -1f;
 
         EnemyProjectile curProjectile = Instantiate(
             fireballPrefab,
