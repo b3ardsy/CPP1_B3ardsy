@@ -23,7 +23,7 @@ public class EnemyProjectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<BaseEnemy>() != null)
+        if (collision.gameObject.CompareTag("Enemy"))
             return;
 
         if (collision.gameObject.CompareTag("Player"))
