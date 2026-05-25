@@ -7,8 +7,10 @@ public class EnemyShoot : MonoBehaviour
     private Animator anim;
     private Transform player;
 
-    [SerializeField] private Vector2 initialShotVelocity = new Vector2(8f, 0f);
+    [SerializeField] private float projectileSpeed = 8f;
     [SerializeField] private float attackCooldown = 2f;
+    [SerializeField] private float attackRange = 15f;
+    [SerializeField] private float playerAimHeightOffset = 0.8f;
 
     [Header("Spawn Points")]
     [SerializeField] private Transform spawnPointLeft;
@@ -38,7 +40,13 @@ public class EnemyShoot : MonoBehaviour
         if (enemy != null && enemy.IsDead)
             return;
 
+        if (player == null)
+            return;
+
         FacePlayer();
+
+        if (!PlayerInRange())
+            return;
 
         attackTimer -= Time.deltaTime;
 
@@ -49,26 +57,32 @@ public class EnemyShoot : MonoBehaviour
         }
     }
 
+    private bool PlayerInRange()
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        return distanceToPlayer <= attackRange;
+    }
+
     private void FacePlayer()
     {
-        if (player == null)
-            return;
-
-        // Mage faces right when player is to the right
         sr.flipX = player.position.x > transform.position.x;
     }
 
     // Called by the animation event named Fire
     public void Fire()
     {
-        if (fireballPrefab == null)
+        if (fireballPrefab == null || player == null)
             return;
 
         Transform spawnPoint = sr.flipX ? spawnPointRight : spawnPointLeft;
-        float direction = sr.flipX ? 1f : -1f;
 
         if (spawnPoint == null)
             return;
+
+        Vector2 targetPosition = player.position;
+        targetPosition.y += playerAimHeightOffset;
+
+        Vector2 shootDirection = (targetPosition - (Vector2)spawnPoint.position).normalized;
 
         EnemyProjectile curProjectile = Instantiate(
             fireballPrefab,
@@ -76,6 +90,6 @@ public class EnemyShoot : MonoBehaviour
             Quaternion.identity
         );
 
-        curProjectile.SetVelocity(initialShotVelocity * direction);
+        curProjectile.SetVelocity(shootDirection * projectileSpeed);
     }
 }

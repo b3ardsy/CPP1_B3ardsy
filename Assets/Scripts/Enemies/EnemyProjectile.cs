@@ -2,10 +2,12 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Collider2D))]
 public class EnemyProjectile : MonoBehaviour
 {
     [SerializeField] private float lifetime = 5f;
     [SerializeField] private int damage = 1;
+    [SerializeField] private float rotationOffset = 0f;
 
     void Start()
     {
@@ -17,8 +19,8 @@ public class EnemyProjectile : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = velocity;
 
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        sr.flipX = velocity.x > 0;
+        float angle = Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle + rotationOffset);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
