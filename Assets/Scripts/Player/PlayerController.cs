@@ -426,6 +426,26 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Roll unlocked");
     }
 
+    public void TakeDamage(int damage)
+    {
+        healthTank -= damage;
+
+        Debug.Log($"Player took {damage} damage. Remaining health: {healthTank}");
+
+        if (healthTank <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player died");
+
+        // TEMPORARY
+        // Replace later with respawn / game over logic
+    }
+
     public void PickUpFireArrow()
     {
         hasFireArrow = true;
