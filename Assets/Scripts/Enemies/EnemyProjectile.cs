@@ -18,7 +18,7 @@ public class EnemyProjectile : MonoBehaviour
         rb.linearVelocity = velocity;
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        sr.flipX = velocity.x < 0;
+        sr.flipX = velocity.x > 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
