@@ -17,7 +17,10 @@ public class HealthTank : PickUp
 
     public override void OnPickup(GameObject player)
     {
-        player.GetComponent<PlayerController>().healthTank += healthTank;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.HealPlayer(healthTank);
+        }
     }
 
     void Start()

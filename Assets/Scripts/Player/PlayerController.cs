@@ -31,9 +31,6 @@ public class PlayerController : MonoBehaviour
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
 
-    [Header("Player Settings")]
-    [SerializeField] private int maxHealthTanks = 9;
-
     [Header("Special Ammo")]
     [SerializeField] private int startingSpecialAmmoCapacity = 5;
     [SerializeField] private int maxSpecialAmmoCapacity = 20;
@@ -42,24 +39,6 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region State Variables
-
-    private int _healthTank = 3;
-
-    public int healthTank
-    {
-        get { return _healthTank; }
-        set
-        {
-            if (value > maxHealthTanks)
-                _healthTank = maxHealthTanks;
-            else if (value < 0)
-                _healthTank = 0;
-            else
-                _healthTank = value;
-
-            Debug.Log($"Health Tanks have changed to {_healthTank}");
-        }
-    }
 
     private int currentSpecialAmmoCapacity;
     private int _specialAmmo;
@@ -428,22 +407,10 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        healthTank -= damage;
-
-        Debug.Log($"Player took {damage} damage. Remaining health: {healthTank}");
-
-        if (healthTank <= 0)
+        if (GameManager.Instance != null)
         {
-            Die();
+            GameManager.Instance.PlayerTakeDamage(damage);
         }
-    }
-
-    private void Die()
-    {
-        Debug.Log("Player died");
-
-        // TEMPORARY
-        // Replace later with respawn / game over logic
     }
 
     public void PickUpFireArrow()
