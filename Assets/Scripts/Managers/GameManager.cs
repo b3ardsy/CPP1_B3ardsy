@@ -55,7 +55,12 @@ public class GameManager : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(gameObject);
 
-        ResetPlayerStats();
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        if (currentSceneName == titleSceneName || currentSceneName == gameSceneName)
+        {
+            ResetPlayerStats();
+        }
     }
 
     void Update()
