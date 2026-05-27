@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
+    public bool IsPaused { get { return isPaused; } }
 
     [Header("Scene Names")]
     [SerializeField] private string titleSceneName = "Title";
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
     private int _healthTanks;
     private bool isGameOver = false;
     private bool isLoadingScene = false;
+    private bool isPaused = false;
+    
 
     public int healthTanks
     {
@@ -28,15 +31,10 @@ public class GameManager : MonoBehaviour
             if (isGameOver || isLoadingScene)
                 return;
 
-            if (value <= 0)
-            {
-                _healthTanks = 0;
-                GameOver();
-                return;
-            }
-
             if (value > maxHealthTanks)
                 _healthTanks = maxHealthTanks;
+            else if (value < 0)
+                _healthTanks = 0;
             else
                 _healthTanks = value;
 
@@ -65,7 +63,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
 
@@ -77,6 +75,10 @@ public class GameManager : MonoBehaviour
             {
                 LoadTitle();
             }
+            else if (currentSceneName == gameSceneName)
+            {
+                TogglePause();
+            }
         }
     }
 
@@ -84,6 +86,8 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = false;
         isLoadingScene = false;
+        isPaused = false;
+        Time.timeScale = 1f;
 
         ResetPlayerStats();
         SceneManager.LoadScene(gameSceneName);
@@ -93,6 +97,8 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = false;
         isLoadingScene = false;
+        isPaused = false;
+        Time.timeScale = 1f;
 
         SceneManager.LoadScene(titleSceneName);
     }
@@ -102,23 +108,7 @@ public class GameManager : MonoBehaviour
         if (isGameOver || isLoadingScene)
             return;
 
-        _healthTanks -= damage;
-
-        if (_healthTanks < 0)
-            _healthTanks = 0;
-
-        Debug.Log($"Health Tanks: {_healthTanks}/{maxHealthTanks}");
-    }
-
-    public void LoadGameOverFromAnimation()
-    {
-        if (isLoadingScene)
-            return;
-
-        isGameOver = true;
-        isLoadingScene = true;
-
-        SceneManager.LoadScene(gameOverSceneName);
+        healthTanks -= damage;
     }
 
     public void HealPlayer(int healAmount)
@@ -135,24 +125,44 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Player stats reset. Health Tanks: {_healthTanks}/{maxHealthTanks}");
     }
 
-    private void GameOver()
+    public void LoadGameOverFromAnimation()
     {
-        if (isGameOver || isLoadingScene)
+        if (isLoadingScene)
             return;
 
         isGameOver = true;
         isLoadingScene = true;
-
-        Debug.Log("Game Over");
-        StartCoroutine(LoadGameOverScene());
-    }
-
-    private IEnumerator LoadGameOverScene()
-    {
-        yield return null;
+        isPaused = false;
+        Time.timeScale = 1f;
 
         SceneManager.LoadScene(gameOverSceneName);
+    }
 
-        isLoadingScene = false;
+    private void TogglePause()
+    {
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+    }
+
+    private void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+
+        Debug.Log("Game Paused");
+    }
+
+    private void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+
+        Debug.Log("Game Resumed");
     }
 }

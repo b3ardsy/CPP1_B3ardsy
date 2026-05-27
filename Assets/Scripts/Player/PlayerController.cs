@@ -154,6 +154,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+            return;
+
         ReadInput();
         UpdateJumpTimers();
         MovementState();
@@ -165,6 +168,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+            return;
+
         CheckGround();
 
         if (isOnLadder)

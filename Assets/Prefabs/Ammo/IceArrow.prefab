@@ -49,6 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   lifetime: 5
+  damage: 3
+  damageType: 0
 --- !u!95 &3890210908510648410
 Animator:
   serializedVersion: 7
