@@ -102,7 +102,23 @@ public class GameManager : MonoBehaviour
         if (isGameOver || isLoadingScene)
             return;
 
-        healthTanks -= damage;
+        _healthTanks -= damage;
+
+        if (_healthTanks < 0)
+            _healthTanks = 0;
+
+        Debug.Log($"Health Tanks: {_healthTanks}/{maxHealthTanks}");
+    }
+
+    public void LoadGameOverFromAnimation()
+    {
+        if (isLoadingScene)
+            return;
+
+        isGameOver = true;
+        isLoadingScene = true;
+
+        SceneManager.LoadScene(gameOverSceneName);
     }
 
     public void HealPlayer(int healAmount)

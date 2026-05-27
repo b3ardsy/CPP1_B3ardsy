@@ -407,9 +407,26 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (GameManager.Instance == null)
+            return;
+
+        GameManager.Instance.PlayerTakeDamage(damage);
+
+        if (GameManager.Instance.healthTanks <= 0)
+        {
+            anim.SetTrigger("Death");
+        }
+        else
+        {
+            anim.SetTrigger("Hit");
+        }
+    }
+
+    public void LoadGameOver()
+    {
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.PlayerTakeDamage(damage);
+            GameManager.Instance.LoadGameOverFromAnimation();
         }
     }
 
