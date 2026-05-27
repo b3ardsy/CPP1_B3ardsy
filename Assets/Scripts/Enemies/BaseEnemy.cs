@@ -9,6 +9,15 @@ public abstract class BaseEnemy : MonoBehaviour
 
     [SerializeField] protected int maxHealth = 5;
 
+    [Header("Drops")]
+    [SerializeField] private GameObject healthDropPrefab;
+    [SerializeField] private GameObject ammoDropPrefab;
+    [SerializeField, Range(0f, 1f)] private float dropChance = 0.75f;
+    [SerializeField] private int minDrops = 1;
+    [SerializeField] private int maxDrops = 5;
+    [SerializeField] private float dropForce = 5f;
+    [SerializeField] private float upwardForce = 2f;
+
     protected bool isDead = false;
 
     public bool IsDead => isDead;
@@ -61,6 +70,7 @@ public abstract class BaseEnemy : MonoBehaviour
             enemyCollider.enabled = false;
         }
 
+        DropOrbs();
         anim.SetTrigger("Death");
     }
 
@@ -73,6 +83,46 @@ public abstract class BaseEnemy : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void DropOrbs()
+    {
+        if (Random.value > dropChance)
+            return;
+
+        int dropCount = Random.Range(minDrops, maxDrops + 1);
+
+        for (int i = 0; i < dropCount; i++)
+        {
+            GameObject dropPrefab = Random.value < 0.5f ? healthDropPrefab : ammoDropPrefab;
+
+            if (dropPrefab == null)
+                continue;
+
+            GameObject drop = Instantiate(
+                dropPrefab,
+                transform.position,
+                Quaternion.identity
+            );
+
+            Rigidbody2D dropRb = drop.GetComponent<Rigidbody2D>();
+
+            if (dropRb != null)
+            {
+                Vector2 randomDirection = new Vector2(
+                    Random.Range(-1f, 1f),
+                    Random.Range(0.5f, 1f)
+                ).normalized;
+
+                dropRb.AddForce(
+                    new Vector2(
+                        randomDirection.x * dropForce,
+                        randomDirection.y * dropForce + upwardForce
+                    ),
+                    ForceMode2D.Impulse
+                );
+            }
         }
     }
 }
