@@ -15,8 +15,11 @@ public abstract class BaseEnemy : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float dropChance = 0.75f;
     [SerializeField] private int minDrops = 1;
     [SerializeField] private int maxDrops = 5;
-    [SerializeField] private float dropForce = 5f;
-    [SerializeField] private float upwardForce = 2f;
+
+    [Header("Drop Explosion")]
+    [SerializeField] private float dropSpawnHeight = 0.75f;
+    [SerializeField] private float horizontalDropForce = 4f;
+    [SerializeField] private float upwardDropForce = 6f;
 
     protected bool isDead = false;
 
@@ -71,6 +74,7 @@ public abstract class BaseEnemy : MonoBehaviour
         }
 
         DropOrbs();
+
         anim.SetTrigger("Death");
     }
 
@@ -100,9 +104,11 @@ public abstract class BaseEnemy : MonoBehaviour
             if (dropPrefab == null)
                 continue;
 
+            Vector3 dropSpawnPosition = transform.position + Vector3.up * dropSpawnHeight;
+
             GameObject drop = Instantiate(
                 dropPrefab,
-                transform.position,
+                dropSpawnPosition,
                 Quaternion.identity
             );
 
@@ -110,18 +116,12 @@ public abstract class BaseEnemy : MonoBehaviour
 
             if (dropRb != null)
             {
-                Vector2 randomDirection = new Vector2(
-                    Random.Range(-1f, 1f),
-                    Random.Range(0.5f, 1f)
-                ).normalized;
-
-                dropRb.AddForce(
-                    new Vector2(
-                        randomDirection.x * dropForce,
-                        randomDirection.y * dropForce + upwardForce
-                    ),
-                    ForceMode2D.Impulse
+                Vector2 explosionForce = new Vector2(
+                    Random.Range(-horizontalDropForce, horizontalDropForce),
+                    Random.Range(upwardDropForce * 0.75f, upwardDropForce)
                 );
+
+                dropRb.AddForce(explosionForce, ForceMode2D.Impulse);
             }
         }
     }
