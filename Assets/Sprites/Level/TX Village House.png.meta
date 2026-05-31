@@ -1,0 +1,3835 @@
+fileFormatVersion: 2
+guid: 7060bf6cda2fb9f4098d5d2511b13045
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2698489850121811027
+    second: TX Village House_0
+  - first:
+      213: 1369473887353406182
+    second: TX Village House_1
+  - first:
+      213: -3314413971364122480
+    second: TX Village House_2
+  - first:
+      213: 7448268516676788879
+    second: TX Village House_3
+  - first:
+      213: 8278110858007956505
+    second: TX Village House_4
+  - first:
+      213: 2623660744445046043
+    second: TX Village House_5
+  - first:
+      213: 3645707607933121485
+    second: TX Village House_6
+  - first:
+      213: 8367480708126945227
+    second: TX Village House_7
+  - first:
+      213: 813419408152610290
+    second: TX Village House_8
+  - first:
+      213: -2111187804736914757
+    second: TX Village House_9
+  - first:
+      213: 3464709186466956117
+    second: TX Village House_10
+  - first:
+      213: -1790715464528483260
+    second: TX Village House_11
+  - first:
+      213: 6429206330055221002
+    second: TX Village House_12
+  - first:
+      213: 7910950439339622652
+    second: TX Village House_13
+  - first:
+      213: 5142576156600820179
+    second: TX Village House_14
+  - first:
+      213: 6488658094012271869
+    second: TX Village House_15
+  - first:
+      213: 5536446880270889802
+    second: TX Village House_16
+  - first:
+      213: 7696321805767655062
+    second: TX Village House_17
+  - first:
+      213: -7068653361974558935
+    second: TX Village House_18
+  - first:
+      213: 7917976793938753036
+    second: TX Village House_19
+  - first:
+      213: 2588061012745204524
+    second: TX Village House_20
+  - first:
+      213: -6677371743589053404
+    second: TX Village House_21
+  - first:
+      213: 7800883516239240303
+    second: TX Village House_22
+  - first:
+      213: -3645936542854120729
+    second: TX Village House_23
+  - first:
+      213: -8587526323853994432
+    second: TX Village House_24
+  - first:
+      213: -5241115554422646390
+    second: TX Village House_25
+  - first:
+      213: 1320932997020441052
+    second: TX Village House_26
+  - first:
+      213: 5285048162001011232
+    second: TX Village House_27
+  - first:
+      213: 7586708247864501218
+    second: TX Village House_28
+  - first:
+      213: -1338181053185038230
+    second: TX Village House_29
+  - first:
+      213: -9037786921478847788
+    second: TX Village House_30
+  - first:
+      213: -5256388227097020940
+    second: TX Village House_31
+  - first:
+      213: 1580797560350953227
+    second: TX Village House_32
+  - first:
+      213: -6222582551995170759
+    second: TX Village House_33
+  - first:
+      213: 5236764259711282357
+    second: TX Village House_34
+  - first:
+      213: 8310144361877221144
+    second: TX Village House_35
+  - first:
+      213: -6458486590903576267
+    second: TX Village House_36
+  - first:
+      213: -3854297322980897562
+    second: TX Village House_37
+  - first:
+      213: -7494469416705649853
+    second: TX Village House_38
+  - first:
+      213: -5427166322566253020
+    second: TX Village House_39
+  - first:
+      213: -3925342795675038200
+    second: TX Village House_40
+  - first:
+      213: -6741067347151562544
+    second: TX Village House_41
+  - first:
+      213: -14436417236520553
+    second: TX Village House_42
+  - first:
+      213: 4559334394601573528
+    second: TX Village House_43
+  - first:
+      213: -6829604133838576278
+    second: TX Village House_44
+  - first:
+      213: 796784458638860962
+    second: TX Village House_45
+  - first:
+      213: -2695535654116879189
+    second: TX Village House_46
+  - first:
+      213: -7815102058742824756
+    second: TX Village House_47
+  - first:
+      213: -2923449256065526857
+    second: TX Village House_48
+  - first:
+      213: -2380264463766339447
+    second: TX Village House_49
+  - first:
+      213: -811635638358868621
+    second: TX Village House_50
+  - first:
+      213: 3243350545693204514
+    second: TX Village House_51
+  - first:
+      213: -4135628553487827118
+    second: TX Village House_52
+  - first:
+      213: 340787191747033562
+    second: TX Village House_53
+  - first:
+      213: 8516412927348624490
+    second: TX Village House_54
+  - first:
+      213: -8189381807041137843
+    second: TX Village House_55
+  - first:
+      213: -3809890458916920984
+    second: TX Village House_56
+  - first:
+      213: 8877808375224830134
+    second: TX Village House_57
+  - first:
+      213: -3619219856197839516
+    second: TX Village House_58
+  - first:
+      213: -6224795149483139076
+    second: TX Village House_59
+  - first:
+      213: -7823088540268527622
+    second: TX Village House_60
+  - first:
+      213: -8512007004534065636
+    second: TX Village House_61
+  - first:
+      213: -8886158673328890237
+    second: TX Village House_62
+  - first:
+      213: 2436643851341069944
+    second: TX Village House_63
+  - first:
+      213: -179695246798758339
+    second: TX Village House_64
+  - first:
+      213: -6450272913806029197
+    second: TX Village House_65
+  - first:
+      213: 391089923954576379
+    second: TX Village House_66
+  - first:
+      213: 2618307429902086719
+    second: TX Village House_67
+  - first:
+      213: 618641024364059250
+    second: TX Village House_68
+  - first:
+      213: -5248553387535819698
+    second: TX Village House_69
+  - first:
+      213: -3174705922684356495
+    second: TX Village House_70
+  - first:
+      213: 2305588067724669003
+    second: TX Village House_71
+  - first:
+      213: 5251086803650015611
+    second: TX Village House_72
+  - first:
+      213: -2127054467375116748
+    second: TX Village House_73
+  - first:
+      213: 1044454827996519125
+    second: TX Village House_74
+  - first:
+      213: -6973911486093557846
+    second: TX Village House_75
+  - first:
+      213: 4525711259498918497
+    second: TX Village House_76
+  - first:
+      213: -5677100343940333505
+    second: TX Village House_77
+  - first:
+      213: 72399374845802556
+    second: TX Village House_78
+  - first:
+      213: -5576244764941796408
+    second: TX Village House_79
+  - first:
+      213: 5675927003137301361
+    second: TX Village House_80
+  - first:
+      213: -7084253949272080838
+    second: TX Village House_81
+  - first:
+      213: -1402612315580114465
+    second: TX Village House_82
+  - first:
+      213: 3872171494434634019
+    second: TX Village House_83
+  - first:
+      213: -3921038479690741502
+    second: TX Village House_84
+  - first:
+      213: -2613432311966304184
+    second: TX Village House_85
+  - first:
+      213: 703243062109839335
+    second: TX Village House_86
+  - first:
+      213: 6948286385854445789
+    second: TX Village House_87
+  - first:
+      213: -2146993154018328008
+    second: TX Village House_88
+  - first:
+      213: -5419110728381676240
+    second: TX Village House_89
+  - first:
+      213: -8562621234752617553
+    second: TX Village House_90
+  - first:
+      213: 2113037511356117255
+    second: TX Village House_91
+  - first:
+      213: -1700089601437528690
+    second: TX Village House_92
+  - first:
+      213: -1099274011005612265
+    second: TX Village House_93
+  - first:
+      213: -4112842259197207188
+    second: TX Village House_94
+  - first:
+      213: -6612621517266948229
+    second: TX Village House_95
+  - first:
+      213: 1640191006057441505
+    second: TX Village House_96
+  - first:
+      213: -6412052018210795977
+    second: TX Village House_97
+  - first:
+      213: 358062914121967313
+    second: TX Village House_98
+  - first:
+      213: 482307345348239800
+    second: TX Village House_99
+  - first:
+      213: 3268486604993481747
+    second: TX Village House_100
+  - first:
+      213: -6757457361604925126
+    second: TX Village House_101
+  - first:
+      213: 7997884590611547488
+    second: TX Village House_102
+  - first:
+      213: 2968035051608467199
+    second: TX Village House_103
+  - first:
+      213: -8760973015753001327
+    second: TX Village House_104
+  - first:
+      213: 5014000115353173611
+    second: TX Village House_105
+  - first:
+      213: -1795396943573598227
+    second: TX Village House_106
+  - first:
+      213: -552621113400222523
+    second: TX Village House_107
+  - first:
+      213: -6614363982781210797
+    second: TX Village House_108
+  - first:
+      213: 8409286060251839625
+    second: TX Village House_109
+  - first:
+      213: -7798424496209094548
+    second: TX Village House_110
+  - first:
+      213: -8292869314071101299
+    second: TX Village House_111
+  - first:
+      213: -4618413784910812603
+    second: TX Village House_112
+  - first:
+      213: 700988576913152998
+    second: TX Village House_113
+  - first:
+      213: 8701034049576631472
+    second: TX Village House_114
+  - first:
+      213: -6716993230945064601
+    second: TX Village House_115
+  - first:
+      213: -5248459245471708658
+    second: TX Village House_116
+  - first:
+      213: -832472684834820615
+    second: TX Village House_117
+  - first:
+      213: 7956198780030757999
+    second: TX Village House_118
+  - first:
+      213: -2050685116590330170
+    second: TX Village House_119
+  - first:
+      213: -6639493513055016297
+    second: TX Village House_120
+  - first:
+      213: -6166727122209382387
+    second: TX Village House_121
+  - first:
+      213: -7815981931676361004
+    second: TX Village House_122
+  - first:
+      213: 6508983585273259308
+    second: TX Village House_123
+  - first:
+      213: -2520550036944107445
+    second: TX Village House_124
+  - first:
+      213: 4103438543189436776
+    second: TX Village House_125
+  - first:
+      213: 780250727724455044
+    second: TX Village House_126
+  - first:
+      213: 2303344472670687277
+    second: TX Village House_127
+  - first:
+      213: 4708768174231418380
+    second: TX Village House_128
+  - first:
+      213: -4053302775050492118
+    second: TX Village House_129
+  - first:
+      213: -4828042450731175871
+    second: TX Village House_130
+  - first:
+      213: 1999658215643441178
+    second: TX Village House_131
+  - first:
+      213: -523999222827421096
+    second: TX Village House_132
+  - first:
+      213: -5831771814743590036
+    second: TX Village House_133
+  - first:
+      213: -5185024825201160604
+    second: TX Village House_134
+  - first:
+      213: 5642566054676488282
+    second: TX Village House_135
+  - first:
+      213: -555225202071525236
+    second: TX Village House_136
+  - first:
+      213: 9048368390617889519
+    second: TX Village House_137
+  - first:
+      213: 8105128380510813045
+    second: TX Village House_138
+  - first:
+      213: -3116149650892573747
+    second: TX Village House_139
+  - first:
+      213: 1163495550835689978
+    second: TX Village House_140
+  - first:
+      213: 5949930133016233497
+    second: TX Village House_141
+  - first:
+      213: 4185310094760703262
+    second: TX Village House_142
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX Village House_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 895
+        width: 240
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354f182b836f27520800000000000000
+      internalID: 2698489850121811027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 895
+        width: 240
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e28fd8ae39510310800000000000000
+      internalID: 1369473887353406182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 882
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090ff36bd06d002d0800000000000000
+      internalID: -3314413971364122480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_3
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 882
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82ee38d0c09d5760800000000000000
+      internalID: 7448268516676788879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_4
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 882
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c4ede47f1c1e270800000000000000
+      internalID: 8278110858007956505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 956
+        width: 128
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1da8cbdb8d196420800000000000000
+      internalID: 2623660744445046043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_6
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 889
+        width: 128
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3facde0c7289230800000000000000
+      internalID: 3645707607933121485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 767
+        width: 240
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf27d80f534f1470800000000000000
+      internalID: 8367480708126945227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_8
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 735
+        width: 102
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5485c54a8d94b00800000000000000
+      internalID: 813419408152610290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 735
+        width: 198
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbaf48c80ed83b2e0800000000000000
+      internalID: -2111187804736914757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_10
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 780
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5534565f5ae151030800000000000000
+      internalID: 3464709186466956117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_11
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 822
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c2bfac5c91627e0800000000000000
+      internalID: -1790715464528483260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_12
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 822
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f52a20811293950800000000000000
+      internalID: 6429206330055221002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_13
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 822
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf00f84b28759cd60800000000000000
+      internalID: 7910950439339622652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 822
+        width: 128
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1e59494c91e5740800000000000000
+      internalID: 5142576156600820179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_15
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 780
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc809a78285c0a50800000000000000
+      internalID: 6488658094012271869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_16
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 754
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43bd50ba1965dc40800000000000000
+      internalID: 5536446880270889802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_17
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 747
+        width: 131
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ebfddc7e3deca60800000000000000
+      internalID: 7696321805767655062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_18
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 754
+        width: 123
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fb227f73917ed90800000000000000
+      internalID: -7068653361974558935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 694
+        width: 238
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06718e51fd42ed60800000000000000
+      internalID: 7917976793938753036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_20
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 756
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2337b967c3aae320800000000000000
+      internalID: 2588061012745204524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_21
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 756
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cc42607c53553a0800000000000000
+      internalID: -6677371743589053404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_22
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 745
+        width: 60
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cd3a72a3e424c60800000000000000
+      internalID: 7800883516239240303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_23
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 688
+        width: 123
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea70910808076dc0800000000000000
+      internalID: -3645936542854120729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 620
+        width: 238
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046dd5f9e4af2d880800000000000000
+      internalID: -8587526323853994432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_25
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 597
+        width: 113
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a891ddffb21d347b0800000000000000
+      internalID: -5241115554422646390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_26
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 692
+        width: 174
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9de7bef85e45210800000000000000
+      internalID: 1320932997020441052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_27
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 600
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022c6ec4d43485940800000000000000
+      internalID: 5285048162001011232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 543
+        width: 142
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e36d7094f6694960800000000000000
+      internalID: 7586708247864501218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_29
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 543
+        width: 142
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a686fbf0c63dd6de0800000000000000
+      internalID: -1338181053185038230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_30
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 543
+        width: 142
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2059ddda4539280800000000000000
+      internalID: -9037786921478847788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_31
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 621
+        width: 123
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5365ac1ce8d07b0800000000000000
+      internalID: -5256388227097020940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 546
+        width: 238
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fc586710f10f510800000000000000
+      internalID: 1580797560350953227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_33
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 604
+        width: 49
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930c8ca3322f4a9a0800000000000000
+      internalID: -6222582551995170759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_34
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 573
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc6d804959bca840800000000000000
+      internalID: 5236764259711282357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_35
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 572
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f28e1a440935370800000000000000
+      internalID: 8310144361877221144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_36
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 545
+        width: 43
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53991920aa8de56a0800000000000000
+      internalID: -6458486590903576267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_37
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 543
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec0cf47109c28ac0800000000000000
+      internalID: -3854297322980897562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_38
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 511
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3431b3dd5cb4ef790800000000000000
+      internalID: -7494469416705649853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_39
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 511
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426b976ebf4dea4b0800000000000000
+      internalID: -5427166322566253020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_40
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 413
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e862256816689c0800000000000000
+      internalID: -3925342795675038200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_41
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 434
+        width: 13
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8db06a6fae272a0800000000000000
+      internalID: -6741067347151562544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_42
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 434
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791b9cea726bccff0800000000000000
+      internalID: -14436417236520553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_43
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 489
+        width: 194
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c827ab972064f30800000000000000
+      internalID: 4559334394601573528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_44
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 492
+        width: 98
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65230e993f5831a0800000000000000
+      internalID: -6829604133838576278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_45
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 497
+        width: 66
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2a8bb5e3fbe0b00800000000000000
+      internalID: 796784458638860962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_46
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 490
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba496f8aa98879ad0800000000000000
+      internalID: -2695535654116879189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_47
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 490
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0c531751e2b8390800000000000000
+      internalID: -7815102058742824756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_48
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 490
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b395550462dd67d0800000000000000
+      internalID: -2923449256065526857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_49
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 491
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980c8b5d41a97fed0800000000000000
+      internalID: -2380264463766339447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_50
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 491
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d7298efad7cb4f0800000000000000
+      internalID: -811635638358868621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_51
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 491
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220ec162322b20d20800000000000000
+      internalID: 3243350545693204514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_52
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 434
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f356afdbb4b96c0800000000000000
+      internalID: -4135628553487827118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_53
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 434
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9b5143528bab400800000000000000
+      internalID: 340787191747033562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_54
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 435
+        width: 41
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cc82f7f60603670800000000000000
+      internalID: 8516412927348624490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_55
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 473
+        width: 194
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43344db2a8795e80800000000000000
+      internalID: -8189381807041137843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_56
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 479
+        width: 98
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8616b1330dc802bc0800000000000000
+      internalID: -3809890458916920984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_57
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 449
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8834d3eaf443b70800000000000000
+      internalID: 8877808375224830134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_58
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 472
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465994b57b2f5cdc0800000000000000
+      internalID: -3619219856197839516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_59
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 383
+        width: 12
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff9b7bbac51d99a0800000000000000
+      internalID: -6224795149483139076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_60
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 383
+        width: 12
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff7ddecb6ece6390800000000000000
+      internalID: -7823088540268527622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_61
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 383
+        width: 12
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c163c195ab64fd980800000000000000
+      internalID: -8512007004534065636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_62
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 456
+        width: 194
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e997a74c50ea480800000000000000
+      internalID: -8886158673328890237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_63
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 466
+        width: 98
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ef2534ca2b0d120800000000000000
+      internalID: 2436643851341069944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_64
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 383
+        width: 7
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3edbb60028918df0800000000000000
+      internalID: -179695246798758339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_65
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 463
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e844cb5f60c76a0800000000000000
+      internalID: -6450272913806029197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_66
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 351
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb0c88b63e6d6500800000000000000
+      internalID: 391089923954576379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_67
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 366
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3274103cb8165420800000000000000
+      internalID: 2618307429902086719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_68
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 366
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a14b4ebbad59800800000000000000
+      internalID: 618641024364059250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_69
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 383
+        width: 78
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c114780846927b0800000000000000
+      internalID: -5248553387535819698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_70
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 384
+        width: 16
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178f11c98cd21f3d0800000000000000
+      internalID: -3174705922684356495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_71
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 388
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40bb1fc1281fff10800000000000000
+      internalID: 2305588067724669003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_72
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 315
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71fc4060ab9fd840800000000000000
+      internalID: 5251086803650015611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_73
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 319
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ec2364b3f2b72e0800000000000000
+      internalID: -2127054467375116748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_74
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 319
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da9caed126ae7e00800000000000000
+      internalID: 1044454827996519125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_75
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 319
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf7068e370b73f90800000000000000
+      internalID: -6973911486093557846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_76
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 363
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1623b6a896e8ece30800000000000000
+      internalID: 4525711259498918497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_77
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 354
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f304035d053e631b0800000000000000
+      internalID: -5677100343940333505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_78
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 318
+        width: 15
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38f4ab09d6310100800000000000000
+      internalID: 72399374845802556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_79
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 316
+        width: 198
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb33053ee23d92b0800000000000000
+      internalID: -5576244764941796408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_80
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bdb097981f4ce40800000000000000
+      internalID: 5675927003137301361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_81
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 318
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ebafe219cafad90800000000000000
+      internalID: -7084253949272080838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_82
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 321
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd95244c78be88ce0800000000000000
+      internalID: -1402612315580114465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_83
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 223
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3297b236577bcb530800000000000000
+      internalID: 3872171494434634019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_84
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 284
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209456bf64ca599c0800000000000000
+      internalID: -3921038479690741502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_85
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 295
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84878b8a8293bbbd0800000000000000
+      internalID: -2613432311966304184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_86
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 295
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef90dbc6db62c900800000000000000
+      internalID: 703243062109839335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_87
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 294
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8798287a54d6060800000000000000
+      internalID: 6948286385854445789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_88
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 303
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832ca870a195432e0800000000000000
+      internalID: -2146993154018328008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_89
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 294
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0354d4411837bc4b0800000000000000
+      internalID: -5419110728381676240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_90
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 300
+        width: 68
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa38a5c8a557b2980800000000000000
+      internalID: -8562621234752617553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_91
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 261
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701f475db64035d10800000000000000
+      internalID: 2113037511356117255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_92
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 261
+        width: 9
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d0bf3d3811868e0800000000000000
+      internalID: -1700089601437528690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_93
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 267
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f01377c189eb0f0800000000000000
+      internalID: -1099274011005612265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_94
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 267
+        width: 9
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6dd55b81cf3ce6c0800000000000000
+      internalID: -4112842259197207188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_95
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 269
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7fe235e3cf3b34a0800000000000000
+      internalID: -6612621517266948229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_96
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 269
+        width: 8
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e828d7a70123c610800000000000000
+      internalID: 1640191006057441505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_97
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 213
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e083579a0d307a0800000000000000
+      internalID: -6412052018210795977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_98
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 246
+        width: 198
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d62b73c25818f400800000000000000
+      internalID: 358062914121967313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_99
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 249
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b12b08a9ff71b600800000000000000
+      internalID: 482307345348239800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_100
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 240
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c42c3004ffb5d20800000000000000
+      internalID: 3268486604993481747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_101
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 240
+        width: 10
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39a0b80550b832a0800000000000000
+      internalID: -6757457361604925126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_102
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 256
+        width: 8
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065c8f919a13efe60800000000000000
+      internalID: 7997884590611547488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_103
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6e7047724903920800000000000000
+      internalID: 2968035051608467199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_104
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 198
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1967245b575ca6680800000000000000
+      internalID: -8760973015753001327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_105
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 198
+        width: 17
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6eb4632a8e459540800000000000000
+      internalID: 5014000115353173611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_106
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 8
+        width: 45
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def39730ef77517e0800000000000000
+      internalID: -1795396943573598227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_107
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 218
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc16687602b458f0800000000000000
+      internalID: -552621113400222523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_108
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 218
+        width: 11
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f1037800f0534a0800000000000000
+      internalID: -6614363982781210797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_109
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 127
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c74f31e19c3b470800000000000000
+      internalID: 8409286060251839625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_110
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 143
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6890cf0d3e66c390800000000000000
+      internalID: -7798424496209094548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_111
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 143
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d800e0edb4fc9ec80800000000000000
+      internalID: -8292869314071101299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_112
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 143
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54aaf9cc12918efb0800000000000000
+      internalID: -4618413784910812603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_113
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 161
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebd38e85696ab900800000000000000
+      internalID: 700988576913152998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_114
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 161
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcf7973e5840c870800000000000000
+      internalID: 8701034049576631472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_115
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 158
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769e0de9e3278c2a0800000000000000
+      internalID: -6716993230945064601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_116
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 172
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a4b8faf1ab927b0800000000000000
+      internalID: -5248459245471708658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_117
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 172
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd6437f0867274f0800000000000000
+      internalID: -832472684834820615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_118
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 127
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c212ef2a81a6e60800000000000000
+      internalID: 7956198780030757999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_119
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cee37f50c08a83e0800000000000000
+      internalID: -2050685116590330170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_120
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 47
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a68d1d3d7cbd3a0800000000000000
+      internalID: -6639493513055016297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_121
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 60
+        width: 222
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0061f5ea526b6aa0800000000000000
+      internalID: -6166727122209382387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_122
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 120
+        width: 59
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de1f8f08dd088390800000000000000
+      internalID: -7815981931676361004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_123
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 118
+        width: 91
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25af01b51e845a50800000000000000
+      internalID: 6508983585273259308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_124
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 96
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4849598815350dd0800000000000000
+      internalID: -2520550036944107445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_125
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 102
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869e3743d9752f830800000000000000
+      internalID: 4103438543189436776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_126
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 117
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48491c527e104da00800000000000000
+      internalID: 780250727724455044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_127
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 103
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2055e0289f17ff10800000000000000
+      internalID: 2303344472670687277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_128
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 8
+        width: 143
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c067ab2d4b7e85140800000000000000
+      internalID: 4708768174231418380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_129
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 5
+        width: 33
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27a206f996cfb7c0800000000000000
+      internalID: -4053302775050492118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_130
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 84
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14079ab98f85ffcb0800000000000000
+      internalID: -4828042450731175871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_131
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 68
+        width: 149
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a186e9f6d8630cb10800000000000000
+      internalID: 1999658215643441178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_132
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 5
+        width: 79
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8527accab716ab8f0800000000000000
+      internalID: -523999222827421096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_133
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 45
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bb21bbe62611fa0800000000000000
+      internalID: -5831771814743590036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_134
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 35
+        width: 102
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e8d4694671b08b0800000000000000
+      internalID: -5185024825201160604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_135
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 7
+        width: 19
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a506bae5eeb6e4e40800000000000000
+      internalID: 5642566054676488282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_136
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 8
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88ae24de917b48f0800000000000000
+      internalID: -555225202071525236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_137
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 8
+        width: 281
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaf6a76c13429d70800000000000000
+      internalID: 9048368390617889519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_138
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 7
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bb84bb1533b7070800000000000000
+      internalID: 8105128380510813045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_139
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 2
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3379f076631c4d0800000000000000
+      internalID: -3116149650892573747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_140
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af90f4df901952010800000000000000
+      internalID: 1163495550835689978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_141
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91643d09ee5629250800000000000000
+      internalID: 5949930133016233497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House_142
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 2
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1571114b55351a30800000000000000
+      internalID: 4185310094760703262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TX Village House_0: 2698489850121811027
+      TX Village House_1: 1369473887353406182
+      TX Village House_10: 3464709186466956117
+      TX Village House_100: 3268486604993481747
+      TX Village House_101: -6757457361604925126
+      TX Village House_102: 7997884590611547488
+      TX Village House_103: 2968035051608467199
+      TX Village House_104: -8760973015753001327
+      TX Village House_105: 5014000115353173611
+      TX Village House_106: -1795396943573598227
+      TX Village House_107: -552621113400222523
+      TX Village House_108: -6614363982781210797
+      TX Village House_109: 8409286060251839625
+      TX Village House_11: -1790715464528483260
+      TX Village House_110: -7798424496209094548
+      TX Village House_111: -8292869314071101299
+      TX Village House_112: -4618413784910812603
+      TX Village House_113: 700988576913152998
+      TX Village House_114: 8701034049576631472
+      TX Village House_115: -6716993230945064601
+      TX Village House_116: -5248459245471708658
+      TX Village House_117: -832472684834820615
+      TX Village House_118: 7956198780030757999
+      TX Village House_119: -2050685116590330170
+      TX Village House_12: 6429206330055221002
+      TX Village House_120: -6639493513055016297
+      TX Village House_121: -6166727122209382387
+      TX Village House_122: -7815981931676361004
+      TX Village House_123: 6508983585273259308
+      TX Village House_124: -2520550036944107445
+      TX Village House_125: 4103438543189436776
+      TX Village House_126: 780250727724455044
+      TX Village House_127: 2303344472670687277
+      TX Village House_128: 4708768174231418380
+      TX Village House_129: -4053302775050492118
+      TX Village House_13: 7910950439339622652
+      TX Village House_130: -4828042450731175871
+      TX Village House_131: 1999658215643441178
+      TX Village House_132: -523999222827421096
+      TX Village House_133: -5831771814743590036
+      TX Village House_134: -5185024825201160604
+      TX Village House_135: 5642566054676488282
+      TX Village House_136: -555225202071525236
+      TX Village House_137: 9048368390617889519
+      TX Village House_138: 8105128380510813045
+      TX Village House_139: -3116149650892573747
+      TX Village House_14: 5142576156600820179
+      TX Village House_140: 1163495550835689978
+      TX Village House_141: 5949930133016233497
+      TX Village House_142: 4185310094760703262
+      TX Village House_15: 6488658094012271869
+      TX Village House_16: 5536446880270889802
+      TX Village House_17: 7696321805767655062
+      TX Village House_18: -7068653361974558935
+      TX Village House_19: 7917976793938753036
+      TX Village House_2: -3314413971364122480
+      TX Village House_20: 2588061012745204524
+      TX Village House_21: -6677371743589053404
+      TX Village House_22: 7800883516239240303
+      TX Village House_23: -3645936542854120729
+      TX Village House_24: -8587526323853994432
+      TX Village House_25: -5241115554422646390
+      TX Village House_26: 1320932997020441052
+      TX Village House_27: 5285048162001011232
+      TX Village House_28: 7586708247864501218
+      TX Village House_29: -1338181053185038230
+      TX Village House_3: 7448268516676788879
+      TX Village House_30: -9037786921478847788
+      TX Village House_31: -5256388227097020940
+      TX Village House_32: 1580797560350953227
+      TX Village House_33: -6222582551995170759
+      TX Village House_34: 5236764259711282357
+      TX Village House_35: 8310144361877221144
+      TX Village House_36: -6458486590903576267
+      TX Village House_37: -3854297322980897562
+      TX Village House_38: -7494469416705649853
+      TX Village House_39: -5427166322566253020
+      TX Village House_4: 8278110858007956505
+      TX Village House_40: -3925342795675038200
+      TX Village House_41: -6741067347151562544
+      TX Village House_42: -14436417236520553
+      TX Village House_43: 4559334394601573528
+      TX Village House_44: -6829604133838576278
+      TX Village House_45: 796784458638860962
+      TX Village House_46: -2695535654116879189
+      TX Village House_47: -7815102058742824756
+      TX Village House_48: -2923449256065526857
+      TX Village House_49: -2380264463766339447
+      TX Village House_5: 2623660744445046043
+      TX Village House_50: -811635638358868621
+      TX Village House_51: 3243350545693204514
+      TX Village House_52: -4135628553487827118
+      TX Village House_53: 340787191747033562
+      TX Village House_54: 8516412927348624490
+      TX Village House_55: -8189381807041137843
+      TX Village House_56: -3809890458916920984
+      TX Village House_57: 8877808375224830134
+      TX Village House_58: -3619219856197839516
+      TX Village House_59: -6224795149483139076
+      TX Village House_6: 3645707607933121485
+      TX Village House_60: -7823088540268527622
+      TX Village House_61: -8512007004534065636
+      TX Village House_62: -8886158673328890237
+      TX Village House_63: 2436643851341069944
+      TX Village House_64: -179695246798758339
+      TX Village House_65: -6450272913806029197
+      TX Village House_66: 391089923954576379
+      TX Village House_67: 2618307429902086719
+      TX Village House_68: 618641024364059250
+      TX Village House_69: -5248553387535819698
+      TX Village House_7: 8367480708126945227
+      TX Village House_70: -3174705922684356495
+      TX Village House_71: 2305588067724669003
+      TX Village House_72: 5251086803650015611
+      TX Village House_73: -2127054467375116748
+      TX Village House_74: 1044454827996519125
+      TX Village House_75: -6973911486093557846
+      TX Village House_76: 4525711259498918497
+      TX Village House_77: -5677100343940333505
+      TX Village House_78: 72399374845802556
+      TX Village House_79: -5576244764941796408
+      TX Village House_8: 813419408152610290
+      TX Village House_80: 5675927003137301361
+      TX Village House_81: -7084253949272080838
+      TX Village House_82: -1402612315580114465
+      TX Village House_83: 3872171494434634019
+      TX Village House_84: -3921038479690741502
+      TX Village House_85: -2613432311966304184
+      TX Village House_86: 703243062109839335
+      TX Village House_87: 6948286385854445789
+      TX Village House_88: -2146993154018328008
+      TX Village House_89: -5419110728381676240
+      TX Village House_9: -2111187804736914757
+      TX Village House_90: -8562621234752617553
+      TX Village House_91: 2113037511356117255
+      TX Village House_92: -1700089601437528690
+      TX Village House_93: -1099274011005612265
+      TX Village House_94: -4112842259197207188
+      TX Village House_95: -6612621517266948229
+      TX Village House_96: 1640191006057441505
+      TX Village House_97: -6412052018210795977
+      TX Village House_98: 358062914121967313
+      TX Village House_99: 482307345348239800
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
