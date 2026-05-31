@@ -7407,9 +7407,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MageEnemy
   maxHealth: 5
-  healthDropPrefab: {fileID: 0}
-  ammoDropPrefab: {fileID: 0}
-  dropChance: 0.75
+  healthDropPrefab: {fileID: 1600993722338867495, guid: 3c12038983c08164a9751bfb35c7da12, type: 3}
+  ammoDropPrefab: {fileID: 8621130576918554673, guid: a963e037dc20ee947b22556502ec9349, type: 3}
+  dropChance: 1
   minDrops: 1
   maxDrops: 5
   dropSpawnHeight: 0.75
@@ -36290,6 +36290,14 @@ PrefabInstance:
     - target: {fileID: 3060791569634538423, guid: 240e753d5036b264887a66963c7920f3, type: 3}
       propertyPath: dropSpawnHeight
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060791569634538423, guid: 240e753d5036b264887a66963c7920f3, type: 3}
+      propertyPath: upwardDropForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060791569634538423, guid: 240e753d5036b264887a66963c7920f3, type: 3}
+      propertyPath: horizontalDropForce
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6746462725632559771, guid: 240e753d5036b264887a66963c7920f3, type: 3}
       propertyPath: m_Name
