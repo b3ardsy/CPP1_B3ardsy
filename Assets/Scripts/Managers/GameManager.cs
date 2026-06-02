@@ -165,4 +165,10 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Game Resumed");
     }
+
+    //public void StartGame()
+
+    //{
+    //    SceneManager.LoadScene("SampleScene");
+    //        }
 }
