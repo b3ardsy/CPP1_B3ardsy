@@ -52,7 +52,7 @@ public class CanvasManager : MonoBehaviour
         if (pauseMenu == null || GameManager.Instance == null)
             return;
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
             TogglePauseMenu();
     }
 

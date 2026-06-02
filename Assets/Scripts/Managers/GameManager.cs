@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     private bool isLoadingScene = false;
     private bool isPaused = false;
 
-    // This lets your prof's CanvasManager use GameManager.Instance.lives
+    
     public int lives
     {
         get { return healthTanks; }
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1f;
 
-        SceneManager.LoadScene(gameOverSceneName);
+        SceneManager.LoadScene(titleSceneName);
     }
 
     public void PlayerTakeDamage(int damage)
