@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
+
     public bool IsPaused { get { return isPaused; } }
 
     [Header("Scene Names")]
@@ -21,22 +21,23 @@ public class GameManager : MonoBehaviour
     private bool isGameOver = false;
     private bool isLoadingScene = false;
     private bool isPaused = false;
-    
+
+    // This lets your prof's CanvasManager use GameManager.Instance.lives
+    public int lives
+    {
+        get { return healthTanks; }
+    }
 
     public int healthTanks
     {
         get { return _healthTanks; }
+
         set
         {
             if (isGameOver || isLoadingScene)
                 return;
 
-            if (value > maxHealthTanks)
-                _healthTanks = maxHealthTanks;
-            else if (value < 0)
-                _healthTanks = 0;
-            else
-                _healthTanks = value;
+            _healthTanks = Mathf.Clamp(value, 0, maxHealthTanks);
 
             Debug.Log($"Health Tanks: {_healthTanks}/{maxHealthTanks}");
         }
@@ -53,33 +54,7 @@ public class GameManager : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(gameObject);
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-
-        if (currentSceneName == titleSceneName || currentSceneName == gameSceneName)
-        {
-            ResetPlayerStats();
-        }
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
-        {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-
-            if (currentSceneName == titleSceneName)
-            {
-                StartGame();
-            }
-            else if (currentSceneName == gameOverSceneName)
-            {
-                LoadTitle();
-            }
-            else if (currentSceneName == gameSceneName)
-            {
-                TogglePause();
-            }
-        }
+        ResetPlayerStats();
     }
 
     public void StartGame()
@@ -87,9 +62,11 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
         isLoadingScene = false;
         isPaused = false;
+
         Time.timeScale = 1f;
 
         ResetPlayerStats();
+
         SceneManager.LoadScene(gameSceneName);
     }
 
@@ -98,31 +75,10 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
         isLoadingScene = false;
         isPaused = false;
+
         Time.timeScale = 1f;
 
         SceneManager.LoadScene(titleSceneName);
-    }
-
-    public void PlayerTakeDamage(int damage)
-    {
-        if (isGameOver || isLoadingScene)
-            return;
-
-        healthTanks -= damage;
-    }
-
-    public void HealPlayer(int healAmount)
-    {
-        if (isGameOver || isLoadingScene)
-            return;
-
-        healthTanks += healAmount;
-    }
-
-    public void ResetPlayerStats()
-    {
-        _healthTanks = startingHealthTanks;
-        Debug.Log($"Player stats reset. Health Tanks: {_healthTanks}/{maxHealthTanks}");
     }
 
     public void LoadGameOverFromAnimation()
@@ -133,24 +89,44 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         isLoadingScene = true;
         isPaused = false;
+
         Time.timeScale = 1f;
 
         SceneManager.LoadScene(gameOverSceneName);
     }
 
-    private void TogglePause()
+    public void PlayerTakeDamage(int damage)
     {
-        if (isPaused)
-        {
-            ResumeGame();
-        }
-        else
-        {
-            PauseGame();
-        }
+        if (isGameOver || isLoadingScene || isPaused)
+            return;
+
+        healthTanks -= damage;
     }
 
-    private void PauseGame()
+    public void HealPlayer(int healAmount)
+    {
+        if (isGameOver || isLoadingScene || isPaused)
+            return;
+
+        healthTanks += healAmount;
+    }
+
+    public void ResetPlayerStats()
+    {
+        _healthTanks = startingHealthTanks;
+
+        Debug.Log($"Player stats reset. Health Tanks: {_healthTanks}/{maxHealthTanks}");
+    }
+
+    public void TogglePause()
+    {
+        if (isPaused)
+            ResumeGame();
+        else
+            PauseGame();
+    }
+
+    public void PauseGame()
     {
         isPaused = true;
         Time.timeScale = 0f;
@@ -158,17 +134,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Paused");
     }
 
-    private void ResumeGame()
+    public void ResumeGame()
     {
         isPaused = false;
         Time.timeScale = 1f;
 
         Debug.Log("Game Resumed");
     }
-
-    //public void StartGame()
-
-    //{
-    //    SceneManager.LoadScene("SampleScene");
-    //        }
 }
