@@ -74,6 +74,11 @@ public class Shoot : MonoBehaviour
         );
 
         curProjectile.SetVelocity(initialShotVelocity * direction);
+
+        if (projectileToShoot == basicArrowPrefab && SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayBasicArrow();
+        }
     }
 
     private Projectile GetProjectileToShoot()

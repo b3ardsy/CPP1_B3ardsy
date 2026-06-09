@@ -91,5 +91,10 @@ public class EnemyShoot : MonoBehaviour
         );
 
         curProjectile.SetVelocity(shootDirection * projectileSpeed);
+
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayEnemyFireball();
+        }
     }
 }

@@ -413,17 +413,26 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (GameManager.Instance == null)
-            return;
+        if (GameManager.Instance == null) return;
 
         GameManager.Instance.PlayerTakeDamage(damage);
 
         if (GameManager.Instance.healthTanks <= 0)
         {
+            if (SFXManager.Instance != null)
+            {
+                SFXManager.Instance.PlayPlayerDeath();
+            }
+
             anim.SetTrigger("Death");
         }
         else
         {
+            if (SFXManager.Instance != null)
+            {
+                SFXManager.Instance.PlayPlayerHit();
+            }
+
             anim.SetTrigger("Hit");
         }
     }
