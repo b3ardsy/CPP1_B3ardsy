@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960.1456, y: -446.63937}
+  m_AnchoredPosition: {x: 960.04034, y: -446.6591}
   m_SizeDelta: {x: 320, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &18678735
@@ -274,12 +274,12 @@ MonoBehaviour:
   allButtons: []
   state: 0
   audioMixer: {fileID: 24100000, guid: c7001503b0135ec4bb7c41697e2f7011, type: 2}
-  masterVolText: {fileID: 0}
-  musicVolText: {fileID: 0}
-  sfxVolText: {fileID: 0}
-  masterVolSlider: {fileID: 0}
-  musicVolSlider: {fileID: 0}
-  sfxVolSlider: {fileID: 0}
+  masterVolText: {fileID: 754319543}
+  musicVolText: {fileID: 602791637}
+  sfxVolText: {fileID: 1918587148}
+  masterVolSlider: {fileID: 18678735}
+  musicVolSlider: {fileID: 1394148016}
+  sfxVolSlider: {fileID: 1439359968}
 --- !u!1 &102474427
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &180209460
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3393,7 +3393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960.1456, y: -539.9181}
+  m_AnchoredPosition: {x: 960.04034, y: -539.9773}
   m_SizeDelta: {x: 320, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394148016
@@ -3743,7 +3743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960.1456, y: -633.1969}
+  m_AnchoredPosition: {x: 960.04034, y: -633.2954}
   m_SizeDelta: {x: 320, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439359968
@@ -5040,7 +5040,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4505218604982414462, guid: c7001503b0135ec4bb7c41697e2f7011, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: ae086e18f853fdc49ba2f059178438f8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.092
   m_Pitch: 1
