@@ -47,7 +47,7 @@ public class CanvasManager : MonoBehaviour
     void Update()
     {
         if (livesText != null && GameManager.Instance != null)
-            livesText.text = "Lives: " + GameManager.Instance.lives;
+            livesText.text = "Health: " + GameManager.Instance.lives;
 
         if (pauseMenu == null || GameManager.Instance == null)
             return;
