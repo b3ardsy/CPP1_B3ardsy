@@ -11,35 +11,21 @@ public class GameManager : MonoBehaviour
     [Header("Scene Names")]
     [SerializeField] private string titleSceneName = "Title";
     [SerializeField] private string gameSceneName = "SampleScene";
-    [SerializeField] private string gameOverSceneName = "GameOver";
 
-    [Header("Player Health")]
-    [SerializeField] private int maxHealthTanks = 9;
-    [SerializeField] private int startingHealthTanks = 3;
-
-    private int _healthTanks;
     private bool isGameOver = false;
     private bool isLoadingScene = false;
     private bool isPaused = false;
 
-    
     public int lives
     {
-        get { return healthTanks; }
-    }
-
-    public int healthTanks
-    {
-        get { return _healthTanks; }
-
-        set
+        get
         {
-            if (isGameOver || isLoadingScene)
-                return;
+            PlayerStats stats = FindAnyObjectByType<PlayerStats>();
 
-            _healthTanks = Mathf.Clamp(value, 0, maxHealthTanks);
+            if (stats == null)
+                return 0;
 
-            Debug.Log($"Health Tanks: {_healthTanks}/{maxHealthTanks}");
+            return stats.CurrentHealth;
         }
     }
 
@@ -53,8 +39,6 @@ public class GameManager : MonoBehaviour
 
         _instance = this;
         DontDestroyOnLoad(gameObject);
-
-        ResetPlayerStats();
     }
 
     public void StartGame()
@@ -64,8 +48,6 @@ public class GameManager : MonoBehaviour
         isPaused = false;
 
         Time.timeScale = 1f;
-
-        ResetPlayerStats();
 
         SceneManager.LoadScene(gameSceneName);
     }
@@ -100,7 +82,12 @@ public class GameManager : MonoBehaviour
         if (isGameOver || isLoadingScene || isPaused)
             return;
 
-        healthTanks -= damage;
+        PlayerStats stats = FindAnyObjectByType<PlayerStats>();
+
+        if (stats == null)
+            return;
+
+        stats.TakeDamage(damage);
     }
 
     public void HealPlayer(int healAmount)
@@ -108,14 +95,12 @@ public class GameManager : MonoBehaviour
         if (isGameOver || isLoadingScene || isPaused)
             return;
 
-        healthTanks += healAmount;
-    }
+        PlayerStats stats = FindAnyObjectByType<PlayerStats>();
 
-    public void ResetPlayerStats()
-    {
-        _healthTanks = startingHealthTanks;
+        if (stats == null)
+            return;
 
-        Debug.Log($"Player stats reset. Health Tanks: {_healthTanks}/{maxHealthTanks}");
+        stats.Heal(healAmount);
     }
 
     public void TogglePause()

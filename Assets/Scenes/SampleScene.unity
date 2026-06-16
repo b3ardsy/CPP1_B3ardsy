@@ -8930,6 +8930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584589444}
+  - component: {fileID: 1584589452}
   - component: {fileID: 1584589447}
   - component: {fileID: 1584589451}
   - component: {fileID: 1584589443}
@@ -9075,9 +9076,6 @@ MonoBehaviour:
   rollingColliderSize: {x: 0.706, y: 0.8}
   rollingColliderOffset: {x: -0.027, y: 0.4}
   climbSpeed: 5
-  startingSpecialAmmoCapacity: 5
-  maxSpecialAmmoCapacity: 25
-  specialAmmoUpgradeAmount: 5
 --- !u!95 &1584589448
 Animator:
   serializedVersion: 7
@@ -9157,6 +9155,23 @@ MonoBehaviour:
   iceArrowPrefab: {fileID: 7703277693943547760, guid: caefa68f034ddd744bd9e69cf91223e8, type: 3}
   fireArrowAmmoCost: 1
   iceArrowAmmoCost: 1
+--- !u!114 &1584589452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584589442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c354c41e45ee731478a8f00d723f29cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  startingHealth: 3
+  maxHealth: 5
+  startingSpecialAmmoCapacity: 5
+  maxSpecialAmmoCapacity: 5
+  specialAmmoUpgradeAmount: 5
 --- !u!1 &1586911801
 GameObject:
   m_ObjectHideFlags: 0
@@ -81626,9 +81641,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   titleSceneName: Title
   gameSceneName: SampleScene
-  gameOverSceneName: GameOver
-  maxHealthTanks: 9
-  startingHealthTanks: 3
 --- !u!4 &1762528302
 Transform:
   m_ObjectHideFlags: 0

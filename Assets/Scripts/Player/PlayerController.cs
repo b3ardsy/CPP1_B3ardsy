@@ -2,6 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(CapsuleCollider2D))]
+[RequireComponent(typeof(PlayerStats))]
 public class PlayerController : MonoBehaviour
 {
     #region Settings and Configurable Variables
@@ -31,76 +32,9 @@ public class PlayerController : MonoBehaviour
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
 
-    [Header("Special Ammo")]
-    [SerializeField] private int startingSpecialAmmoCapacity = 5;
-    [SerializeField] private int maxSpecialAmmoCapacity = 20;
-    [SerializeField] private int specialAmmoUpgradeAmount = 5;
-
     #endregion
 
     #region State Variables
-
-    private int currentSpecialAmmoCapacity;
-    private int _specialAmmo;
-
-    public int specialAmmo
-    {
-        get { return _specialAmmo; }
-        set
-        {
-            if (value > currentSpecialAmmoCapacity)
-                _specialAmmo = currentSpecialAmmoCapacity;
-            else if (value < 0)
-                _specialAmmo = 0;
-            else
-                _specialAmmo = value;
-
-            Debug.Log($"Special Ammo has changed to {_specialAmmo}/{currentSpecialAmmoCapacity}");
-        }
-    }
-
-    private int _bountyTokens = 0;
-
-    public int bountyTokens
-    {
-        get { return _bountyTokens; }
-        set
-        {
-            _bountyTokens = Mathf.Max(0, value);
-            Debug.Log($"Bounty Tokens Acquired {_bountyTokens}");
-        }
-    }
-
-    private bool hasRoll = false;
-    private bool hasFireArrow = false;
-    private bool hasIceArrow = false;
-    private bool hasKey = false;
-
-    public bool HasRoll { get { return hasRoll; } }
-    public bool HasFireArrow { get { return hasFireArrow; } }
-    public bool HasIceArrow { get { return hasIceArrow; } }
-    public bool HasKey { get { return hasKey; } }
-
-    public bool TrySpendSpecialAmmo(int amount)
-    {
-        if (specialAmmo < amount)
-            return false;
-
-        specialAmmo -= amount;
-        return true;
-    }
-
-    public void PickUpAmmoTank()
-    {
-        currentSpecialAmmoCapacity += specialAmmoUpgradeAmount;
-
-        if (currentSpecialAmmoCapacity > maxSpecialAmmoCapacity)
-            currentSpecialAmmoCapacity = maxSpecialAmmoCapacity;
-
-        specialAmmo = currentSpecialAmmoCapacity;
-
-        Debug.Log($"Ammo capacity upgraded. Special Ammo: {specialAmmo}/{currentSpecialAmmoCapacity}");
-    }
 
     private bool isRolling;
     private float rollTimer;
@@ -119,6 +53,7 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider2D col;
     private SpriteRenderer sr;
     private Animator anim;
+    private PlayerStats stats;
 
     private GroundCheck groundCheck;
 
@@ -138,13 +73,31 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    #region Compatibility Properties
+
+    public int specialAmmo
+    {
+        get { return stats.CurrentSpecialAmmo; }
+        set { stats.SetSpecialAmmo(value); }
+    }
+
+    public int bountyTokens
+    {
+        get { return stats.BountyTokens; }
+        set { stats.SetBountyTokens(value); }
+    }
+
+    public bool HasRoll { get { return stats.HasRoll; } }
+    public bool HasFireArrow { get { return stats.HasFireArrow; } }
+    public bool HasIceArrow { get { return stats.HasIceArrow; } }
+    public bool HasKey { get { return stats.HasKey; } }
+
+    #endregion
+
     void Start()
     {
         GetComponents();
         SetupGroundCheck();
-
-        currentSpecialAmmoCapacity = startingSpecialAmmoCapacity;
-        specialAmmo = currentSpecialAmmoCapacity;
 
         startingGravity = rb.gravityScale;
 
@@ -192,6 +145,7 @@ public class PlayerController : MonoBehaviour
         col = GetComponent<CapsuleCollider2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        stats = GetComponent<PlayerStats>();
     }
 
     private void SetupGroundCheck()
@@ -354,7 +308,7 @@ public class PlayerController : MonoBehaviour
 
     private void Roll()
     {
-        if (!hasRoll)
+        if (!stats.HasRoll)
             return;
 
         if (isRolling)
@@ -405,19 +359,46 @@ public class PlayerController : MonoBehaviour
         // Not using this yet
     }
 
+    public bool TrySpendSpecialAmmo(int amount)
+    {
+        return stats.TrySpendSpecialAmmo(amount);
+    }
+
+    public void PickUpAmmoTank()
+    {
+        stats.PickUpAmmoTank();
+    }
+
     public void PickUpRoll()
     {
-        hasRoll = true;
-        Debug.Log("Roll unlocked");
+        stats.UnlockRoll();
+    }
+
+    public void PickUpFireArrow()
+    {
+        stats.UnlockFireArrow();
+    }
+
+    public void PickUpIceArrow()
+    {
+        stats.UnlockIceArrow();
+    }
+
+    public void PickUpKey()
+    {
+        stats.PickUpKey();
+    }
+
+    public void PickUpBountyToken()
+    {
+        stats.AddBountyToken();
     }
 
     public void TakeDamage(int damage)
     {
-        if (GameManager.Instance == null) return;
+        stats.TakeDamage(damage);
 
-        GameManager.Instance.PlayerTakeDamage(damage);
-
-        if (GameManager.Instance.healthTanks <= 0)
+        if (stats.IsDead())
         {
             if (SFXManager.Instance != null)
             {
@@ -443,24 +424,6 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.LoadGameOverFromAnimation();
         }
-    }
-
-    public void PickUpFireArrow()
-    {
-        hasFireArrow = true;
-        Debug.Log("Fire Arrow unlocked");
-    }
-
-    public void PickUpIceArrow()
-    {
-        hasIceArrow = true;
-        Debug.Log("Ice Arrow unlocked");
-    }
-
-    public void PickUpKey()
-    {
-        hasKey = true;
-        Debug.Log("Key acquired");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

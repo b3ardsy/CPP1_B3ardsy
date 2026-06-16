@@ -625,9 +625,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   titleSceneName: Title
   gameSceneName: SampleScene
-  gameOverSceneName: GameOver
-  maxHealthTanks: 9
-  startingHealthTanks: 3
 --- !u!4 &1955258256
 Transform:
   m_ObjectHideFlags: 0
