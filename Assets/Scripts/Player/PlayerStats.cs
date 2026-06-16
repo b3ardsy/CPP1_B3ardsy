@@ -1,5 +1,12 @@
 using UnityEngine;
 
+public enum SpecialArrowType
+{
+    None,
+    Fire,
+    Ice
+}
+
 public class PlayerStats : MonoBehaviour
 {
     [Header("Health")]
@@ -25,6 +32,8 @@ public class PlayerStats : MonoBehaviour
     private bool hasIceArrow = false;
     private bool hasKey = false;
 
+    private SpecialArrowType equippedSpecialArrow = SpecialArrowType.None;
+
     public int CurrentHealth { get { return currentHealth; } }
     public int MaxHealth { get { return currentMaxHealth; } }
 
@@ -37,6 +46,16 @@ public class PlayerStats : MonoBehaviour
     public bool HasFireArrow { get { return hasFireArrow; } }
     public bool HasIceArrow { get { return hasIceArrow; } }
     public bool HasKey { get { return hasKey; } }
+
+    public bool HasAnySpecialArrow
+    {
+        get { return hasFireArrow || hasIceArrow; }
+    }
+
+    public SpecialArrowType EquippedSpecialArrow
+    {
+        get { return equippedSpecialArrow; }
+    }
 
     void Start()
     {
@@ -57,6 +76,8 @@ public class PlayerStats : MonoBehaviour
         hasFireArrow = false;
         hasIceArrow = false;
         hasKey = false;
+
+        equippedSpecialArrow = SpecialArrowType.None;
 
         Debug.Log($"Player stats reset. Health: {currentHealth}/{currentMaxHealth}, Special Ammo: {currentSpecialAmmo}/{currentSpecialAmmoCapacity}");
     }
@@ -141,13 +162,42 @@ public class PlayerStats : MonoBehaviour
     public void UnlockFireArrow()
     {
         hasFireArrow = true;
+        equippedSpecialArrow = SpecialArrowType.Fire;
+
         Debug.Log("Fire Arrow unlocked");
     }
 
     public void UnlockIceArrow()
     {
         hasIceArrow = true;
+        equippedSpecialArrow = SpecialArrowType.Ice;
+
         Debug.Log("Ice Arrow unlocked");
+    }
+
+    public void ToggleSpecialArrow()
+    {
+        if (hasFireArrow && hasIceArrow)
+        {
+            if (equippedSpecialArrow == SpecialArrowType.Fire)
+                equippedSpecialArrow = SpecialArrowType.Ice;
+            else
+                equippedSpecialArrow = SpecialArrowType.Fire;
+        }
+        else if (hasFireArrow)
+        {
+            equippedSpecialArrow = SpecialArrowType.Fire;
+        }
+        else if (hasIceArrow)
+        {
+            equippedSpecialArrow = SpecialArrowType.Ice;
+        }
+        else
+        {
+            equippedSpecialArrow = SpecialArrowType.None;
+        }
+
+        Debug.Log($"Equipped Special Arrow: {equippedSpecialArrow}");
     }
 
     public void PickUpKey()

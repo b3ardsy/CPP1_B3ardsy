@@ -4,6 +4,7 @@ public class Shoot : MonoBehaviour
 {
     private SpriteRenderer sr;
     private PlayerController playerController;
+    private PlayerStats playerStats;
 
     [SerializeField] private Vector2 initialShotVelocity = new Vector2(15, 0);
 
@@ -24,6 +25,7 @@ public class Shoot : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         playerController = GetComponent<PlayerController>();
+        playerStats = GetComponent<PlayerStats>();
 
         if (initialShotVelocity == Vector2.zero)
         {
@@ -55,6 +57,11 @@ public class Shoot : MonoBehaviour
         {
             Debug.LogError("Shoot: PlayerController was not found on " + gameObject.name);
         }
+
+        if (playerStats == null)
+        {
+            Debug.LogError("Shoot: PlayerStats was not found on " + gameObject.name);
+        }
     }
 
     public void Fire()
@@ -74,32 +81,25 @@ public class Shoot : MonoBehaviour
         );
 
         curProjectile.SetVelocity(initialShotVelocity * direction);
-
-        if (projectileToShoot == basicArrowPrefab && SFXManager.Instance != null)
-        {
-            SFXManager.Instance.PlayBasicArrow();
-        }
     }
 
     private Projectile GetProjectileToShoot()
     {
         bool wantsSpecialArrow = Input.GetMouseButton(1);
 
-        if (!wantsSpecialArrow)
+        if (!wantsSpecialArrow || playerStats == null)
             return basicArrowPrefab;
 
-        if (playerController.HasFireArrow &&
-            fireArrowPrefab != null &&
-            playerController.TrySpendSpecialAmmo(fireArrowAmmoCost))
+        if (playerStats.EquippedSpecialArrow == SpecialArrowType.Fire)
         {
-            return fireArrowPrefab;
+            if (fireArrowPrefab != null && playerStats.TrySpendSpecialAmmo(fireArrowAmmoCost))
+                return fireArrowPrefab;
         }
 
-        if (playerController.HasIceArrow &&
-            iceArrowPrefab != null &&
-            playerController.TrySpendSpecialAmmo(iceArrowAmmoCost))
+        if (playerStats.EquippedSpecialArrow == SpecialArrowType.Ice)
         {
-            return iceArrowPrefab;
+            if (iceArrowPrefab != null && playerStats.TrySpendSpecialAmmo(iceArrowAmmoCost))
+                return iceArrowPrefab;
         }
 
         return basicArrowPrefab;

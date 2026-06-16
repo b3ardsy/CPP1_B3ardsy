@@ -117,6 +117,7 @@ public class PlayerController : MonoBehaviour
         FireAttack();
         Roll();
         UpdateAnims();
+        HandleSpecialArrowSwap();
     }
 
     void FixedUpdate()
@@ -156,6 +157,14 @@ public class PlayerController : MonoBehaviour
             groundRayLength,
             groundLayer
         );
+    }
+
+    private void HandleSpecialArrowSwap()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            stats.ToggleSpecialArrow();
+        }
     }
 
     private void ReadInput()
