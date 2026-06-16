@@ -5,11 +5,17 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager Instance;
 
-    [Header("SFX Clips")]
+    [Header("Player SFX")]
     [SerializeField] private AudioClip playerDeath;
     [SerializeField] private AudioClip playerHit;
+
+    [Header("Enemy SFX")]
     [SerializeField] private AudioClip enemyFireball;
+
+    [Header("Arrow SFX")]
     [SerializeField] private AudioClip basicArrow;
+    [SerializeField] private AudioClip fireArrow;
+    [SerializeField] private AudioClip iceArrow;
 
     private AudioSource audioSource;
 
@@ -29,21 +35,39 @@ public class SFXManager : MonoBehaviour
 
     public void PlayPlayerDeath()
     {
-        audioSource.PlayOneShot(playerDeath);
+        PlayClip(playerDeath);
     }
 
     public void PlayPlayerHit()
     {
-        audioSource.PlayOneShot(playerHit);
+        PlayClip(playerHit);
     }
 
     public void PlayEnemyFireball()
     {
-        audioSource.PlayOneShot(enemyFireball);
+        PlayClip(enemyFireball);
     }
 
     public void PlayBasicArrow()
     {
-        audioSource.PlayOneShot(basicArrow);
+        PlayClip(basicArrow);
+    }
+
+    public void PlayFireArrow()
+    {
+        PlayClip(fireArrow);
+    }
+
+    public void PlayIceArrow()
+    {
+        PlayClip(iceArrow);
+    }
+
+    private void PlayClip(AudioClip clip)
+    {
+        if (clip == null || audioSource == null)
+            return;
+
+        audioSource.PlayOneShot(clip);
     }
 }

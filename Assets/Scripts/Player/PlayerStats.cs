@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public enum SpecialArrowType
@@ -9,6 +10,8 @@ public enum SpecialArrowType
 
 public class PlayerStats : MonoBehaviour
 {
+    public event Action<string> OnAlertRequested;
+
     [Header("Health")]
     [SerializeField] private int startingHealth = 5;
     [SerializeField] private int maxHealthCapacity = 20;
@@ -102,6 +105,8 @@ public class PlayerStats : MonoBehaviour
         currentHealth = currentMaxHealth;
 
         Debug.Log($"Health tank upgraded. Health: {currentHealth}/{currentMaxHealth}");
+
+        OnAlertRequested?.Invoke("Full Health\nHealth tanks upgraded to " + currentMaxHealth);
     }
 
     public bool IsDead()
@@ -139,6 +144,8 @@ public class PlayerStats : MonoBehaviour
         currentSpecialAmmo = currentSpecialAmmoCapacity;
 
         Debug.Log($"Ammo capacity upgraded. Special Ammo: {currentSpecialAmmo}/{currentSpecialAmmoCapacity}");
+
+        OnAlertRequested?.Invoke("Full Ammo\nAmmo tanks upgraded to " + currentSpecialAmmoCapacity);
     }
 
     public void AddBountyToken()
@@ -157,6 +164,8 @@ public class PlayerStats : MonoBehaviour
     {
         hasRoll = true;
         Debug.Log("Roll unlocked");
+
+        OnAlertRequested?.Invoke("Roll Ability Unlocked\nPress Shift to roll under objects");
     }
 
     public void UnlockFireArrow()
@@ -165,6 +174,8 @@ public class PlayerStats : MonoBehaviour
         equippedSpecialArrow = SpecialArrowType.Fire;
 
         Debug.Log("Fire Arrow unlocked");
+
+        OnAlertRequested?.Invoke("Fire Arrow Unlocked\nHold RMB and click LMB");
     }
 
     public void UnlockIceArrow()
@@ -173,6 +184,8 @@ public class PlayerStats : MonoBehaviour
         equippedSpecialArrow = SpecialArrowType.Ice;
 
         Debug.Log("Ice Arrow unlocked");
+
+        OnAlertRequested?.Invoke("Ice Arrow Unlocked\nPress E to swap Ammo types");
     }
 
     public void ToggleSpecialArrow()

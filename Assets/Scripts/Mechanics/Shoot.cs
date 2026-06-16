@@ -6,6 +6,8 @@ public class Shoot : MonoBehaviour
     private PlayerController playerController;
     private PlayerStats playerStats;
 
+    private SpecialArrowType lastArrowFired = SpecialArrowType.None;
+
     [SerializeField] private Vector2 initialShotVelocity = new Vector2(15, 0);
 
     [Header("Spawn Points")]
@@ -81,10 +83,14 @@ public class Shoot : MonoBehaviour
         );
 
         curProjectile.SetVelocity(initialShotVelocity * direction);
+
+        PlayArrowSFX();
     }
 
     private Projectile GetProjectileToShoot()
     {
+        lastArrowFired = SpecialArrowType.None;
+
         bool wantsSpecialArrow = Input.GetMouseButton(1);
 
         if (!wantsSpecialArrow || playerStats == null)
@@ -93,15 +99,40 @@ public class Shoot : MonoBehaviour
         if (playerStats.EquippedSpecialArrow == SpecialArrowType.Fire)
         {
             if (fireArrowPrefab != null && playerStats.TrySpendSpecialAmmo(fireArrowAmmoCost))
+            {
+                lastArrowFired = SpecialArrowType.Fire;
                 return fireArrowPrefab;
+            }
         }
 
         if (playerStats.EquippedSpecialArrow == SpecialArrowType.Ice)
         {
             if (iceArrowPrefab != null && playerStats.TrySpendSpecialAmmo(iceArrowAmmoCost))
+            {
+                lastArrowFired = SpecialArrowType.Ice;
                 return iceArrowPrefab;
+            }
         }
 
         return basicArrowPrefab;
+    }
+
+    private void PlayArrowSFX()
+    {
+        if (SFXManager.Instance == null)
+            return;
+
+        if (lastArrowFired == SpecialArrowType.Fire)
+        {
+            SFXManager.Instance.PlayFireArrow();
+        }
+        else if (lastArrowFired == SpecialArrowType.Ice)
+        {
+            SFXManager.Instance.PlayIceArrow();
+        }
+        else
+        {
+            SFXManager.Instance.PlayBasicArrow();
+        }
     }
 }
