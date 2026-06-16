@@ -19,9 +19,17 @@ public class AmmoTank : PickUp
         if (hasBeenPickedUp)
             return;
 
+        PlayerStats stats = player.GetComponent<PlayerStats>();
+
+        if (stats == null)
+        {
+            Debug.LogWarning("AmmoTank could not find PlayerStats on player.");
+            return;
+        }
+
         hasBeenPickedUp = true;
 
-        player.GetComponent<PlayerController>().PickUpAmmoTank();
+        stats.PickUpAmmoTank();
 
         Destroy(gameObject);
     }

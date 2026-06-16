@@ -3,9 +3,9 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private int startingHealth = 3;
-    [SerializeField] private int maxHealthCapacity = 9;
-    [SerializeField] private int healthTankUpgradeAmount = 1;
+    [SerializeField] private int startingHealth = 5;
+    [SerializeField] private int maxHealthCapacity = 20;
+    [SerializeField] private int healthTankUpgradeAmount = 5;
 
     [Header("Special Ammo")]
     [SerializeField] private int startingSpecialAmmoCapacity = 5;
