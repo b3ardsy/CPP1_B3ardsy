@@ -6,13 +6,14 @@ public class MenuController : MonoBehaviour
     public BaseMenu[] allMenus;
     public MenuStates initState = MenuStates.MainMenu;
 
+    [SerializeField] private bool startHidden = false;
+
     public BaseMenu currentMenu => _currentMenu;
     private BaseMenu _currentMenu;
 
     private Dictionary<MenuStates, BaseMenu> menuDictionary = new Dictionary<MenuStates, BaseMenu>();
     private Stack<MenuStates> menuHistory = new Stack<MenuStates>();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (allMenus.Length == 0)
@@ -23,6 +24,7 @@ public class MenuController : MonoBehaviour
         foreach (BaseMenu menu in allMenus)
         {
             if (menu == null) continue;
+
             menu.Initialize(this);
 
             if (!menuDictionary.ContainsKey(menu.state))
@@ -33,33 +35,21 @@ public class MenuController : MonoBehaviour
             {
                 Debug.LogWarning($"Duplicate menu state detected: {menu.state}. Only the first one will be used.");
             }
+
+            menu.Exit();
         }
 
-        JumpTo(initState);
-    }
-
-    public void JumpBack()
-    {
-        if (menuHistory.Count <= 0)
+        if (!startHidden)
         {
-            Debug.LogWarning("No previous menu to jump back to.");
-            return;
+            JumpTo(initState);
         }
-
-        menuHistory.Pop(); // Remove current menu from history
-        JumpTo(menuHistory.Peek(), true);
     }
 
     public void JumpTo(MenuStates newState, bool isBackNavigation = false)
     {
         if (!menuDictionary.ContainsKey(newState))
         {
-            Debug.LogError($"Menu state {newState} does not exist in the menu dictionary.");
-            return;
-        }
-        if (_currentMenu == menuDictionary[newState])
-        {
-            Debug.LogWarning($"Already on menu state {newState}. No transition needed.");
+            Debug.LogError($"Menu state {newState} does not exist.");
             return;
         }
 
@@ -73,20 +63,32 @@ public class MenuController : MonoBehaviour
 
         if (!isBackNavigation)
         {
-            if (menuHistory.Count > 0 && menuHistory.Contains(newState))
-            {
-                List<MenuStates> tempStack = new List<MenuStates>();
-                while (menuHistory.Peek() != newState)
-                {
-                    tempStack.Add(menuHistory.Pop());
-                }
-                menuHistory.Pop(); // Remove the duplicate state
-                for (int i = tempStack.Count - 1; i >= 0; i--)
-                {
-                    menuHistory.Push(tempStack[i]);
-                }
-            }
             menuHistory.Push(newState);
         }
+    }
+
+    public void JumpBack()
+    {
+        if (menuHistory.Count <= 1)
+        {
+            Debug.LogWarning("No previous menu to jump back to.");
+            return;
+        }
+
+        menuHistory.Pop();
+
+        MenuStates previousState = menuHistory.Peek();
+        JumpTo(previousState, true);
+    }
+
+    public void HideCurrentMenu()
+    {
+        if (_currentMenu != null)
+        {
+            _currentMenu.Exit();
+            _currentMenu = null;
+        }
+
+        menuHistory.Clear();
     }
 }

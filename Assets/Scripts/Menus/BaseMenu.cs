@@ -18,6 +18,7 @@ public abstract class BaseMenu : MonoBehaviour
     {
         gameObject.SetActive(true);
     }
+
     public virtual void Exit()
     {
         gameObject.SetActive(false);
@@ -32,11 +33,6 @@ public abstract class BaseMenu : MonoBehaviour
 #endif
     }
 
-    public void JumpBack()
-    {
-        context.JumpBack();
-    }
-
     public void JumpTo(MenuStates newState)
     {
         context.JumpTo(newState);
@@ -46,6 +42,7 @@ public abstract class BaseMenu : MonoBehaviour
 public enum MenuStates
 {
     MainMenu,
+    PauseMenu,
     SettingsMenu,
-    CreditsMenu,
+    CreditsMenu
 }

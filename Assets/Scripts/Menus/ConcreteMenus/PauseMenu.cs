@@ -2,19 +2,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : BaseMenu
+public class PauseMenu : BaseMenu
 {
     public override void Initialize(MenuController context)
     {
         base.Initialize(context);
-        state = MenuStates.MainMenu;
+        state = MenuStates.PauseMenu;
 
         foreach (Button button in allButtons)
         {
             if (button == null) continue;
 
-            if (button.name.Contains("Start"))
-                button.onClick.AddListener(() => SceneManager.LoadScene("SampleScene"));
+            if (button.name.Contains("Resume"))
+                button.onClick.AddListener(ResumeGame);
 
             if (button.name.Contains("Settings"))
                 button.onClick.AddListener(() => context.JumpTo(MenuStates.SettingsMenu));
@@ -25,5 +25,11 @@ public class MainMenu : BaseMenu
             if (button.name.Contains("Quit"))
                 button.onClick.AddListener(QuitGame);
         }
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        context.HideCurrentMenu();
     }
 }
