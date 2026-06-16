@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class HealthTank : PickUp
 {
-    [SerializeField] private int healthTank = 1;
-
     [Header("Hover Settings")]
     [SerializeField] private float hoverHeight = 0.25f;
-
     [SerializeField] private float hoverSpeed = 2f;
 
     [Header("Flip Settings")]
@@ -17,9 +14,11 @@ public class HealthTank : PickUp
 
     public override void OnPickup(GameObject player)
     {
-        if (GameManager.Instance != null)
+        PlayerStats stats = player.GetComponent<PlayerStats>();
+
+        if (stats != null)
         {
-            GameManager.Instance.HealPlayer(healthTank);
+            stats.UpgradeHealthTank();
         }
     }
 

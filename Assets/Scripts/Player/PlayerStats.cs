@@ -4,7 +4,8 @@ public class PlayerStats : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField] private int startingHealth = 3;
-    [SerializeField] private int maxHealth = 9;
+    [SerializeField] private int maxHealthCapacity = 9;
+    [SerializeField] private int healthTankUpgradeAmount = 1;
 
     [Header("Special Ammo")]
     [SerializeField] private int startingSpecialAmmoCapacity = 5;
@@ -12,6 +13,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int specialAmmoUpgradeAmount = 5;
 
     private int currentHealth;
+    private int currentMaxHealth;
+
     private int currentSpecialAmmo;
     private int currentSpecialAmmoCapacity;
 
@@ -23,7 +26,7 @@ public class PlayerStats : MonoBehaviour
     private bool hasKey = false;
 
     public int CurrentHealth { get { return currentHealth; } }
-    public int MaxHealth { get { return maxHealth; } }
+    public int MaxHealth { get { return currentMaxHealth; } }
 
     public int CurrentSpecialAmmo { get { return currentSpecialAmmo; } }
     public int MaxSpecialAmmo { get { return currentSpecialAmmoCapacity; } }
@@ -42,7 +45,8 @@ public class PlayerStats : MonoBehaviour
 
     public void ResetStats()
     {
-        currentHealth = startingHealth;
+        currentMaxHealth = startingHealth;
+        currentHealth = currentMaxHealth;
 
         currentSpecialAmmoCapacity = startingSpecialAmmoCapacity;
         currentSpecialAmmo = currentSpecialAmmoCapacity;
@@ -54,27 +58,29 @@ public class PlayerStats : MonoBehaviour
         hasIceArrow = false;
         hasKey = false;
 
-        Debug.Log($"Player stats reset. Health: {currentHealth}/{maxHealth}, Special Ammo: {currentSpecialAmmo}/{currentSpecialAmmoCapacity}");
+        Debug.Log($"Player stats reset. Health: {currentHealth}/{currentMaxHealth}, Special Ammo: {currentSpecialAmmo}/{currentSpecialAmmoCapacity}");
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
-        Debug.Log($"Health: {currentHealth}/{maxHealth}");
+        currentHealth = Mathf.Clamp(currentHealth - damage, 0, currentMaxHealth);
+        Debug.Log($"Health: {currentHealth}/{currentMaxHealth}");
     }
 
     public void Heal(int healAmount)
     {
-        currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
-        Debug.Log($"Health: {currentHealth}/{maxHealth}");
+        currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, currentMaxHealth);
+        Debug.Log($"Health: {currentHealth}/{currentMaxHealth}");
     }
 
     public void UpgradeHealthTank()
     {
-        maxHealth += 1;
-        currentHealth = maxHealth;
+        currentMaxHealth += healthTankUpgradeAmount;
+        currentMaxHealth = Mathf.Clamp(currentMaxHealth, startingHealth, maxHealthCapacity);
 
-        Debug.Log($"Health upgraded. Health: {currentHealth}/{maxHealth}");
+        currentHealth = currentMaxHealth;
+
+        Debug.Log($"Health tank upgraded. Health: {currentHealth}/{currentMaxHealth}");
     }
 
     public bool IsDead()
