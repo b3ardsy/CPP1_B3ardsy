@@ -6,7 +6,6 @@ public class BountyToken : PickUp
 
     [Header("Hover Settings")]
     [SerializeField] private float hoverHeight = 0.25f;
-
     [SerializeField] private float hoverSpeed = 2f;
 
     [Header("Flip Settings")]
@@ -17,7 +16,18 @@ public class BountyToken : PickUp
 
     public override void OnPickup(GameObject player)
     {
-        player.GetComponent<PlayerController>().bountyTokens += tokensToAdd;
+        PlayerStats stats = player.GetComponent<PlayerStats>();
+
+        if (stats == null)
+        {
+            Debug.LogWarning("BountyToken could not find PlayerStats on player.");
+            return;
+        }
+
+        for (int i = 0; i < tokensToAdd; i++)
+        {
+            stats.AddBountyToken();
+        }
     }
 
     void Start()

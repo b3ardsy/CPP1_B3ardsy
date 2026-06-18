@@ -151,7 +151,12 @@ public class PlayerStats : MonoBehaviour
     public void AddBountyToken()
     {
         bountyTokens++;
+
         Debug.Log($"Bounty Tokens Acquired: {bountyTokens}");
+
+        OnAlertRequested?.Invoke(
+            "Bounty Token Acquired!\nReturn to the Tavern!"
+        );
     }
 
     public void SetBountyTokens(int amount)
@@ -159,6 +164,8 @@ public class PlayerStats : MonoBehaviour
         bountyTokens = Mathf.Max(0, amount);
         Debug.Log($"Bounty Tokens Acquired: {bountyTokens}");
     }
+
+
 
     public void UnlockRoll()
     {

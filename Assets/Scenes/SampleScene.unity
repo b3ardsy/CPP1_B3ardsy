@@ -502,8 +502,9 @@ MonoBehaviour:
     Entrance Fee: 1 Bounty Token'
   completedMessage: 'Closed due to scope creep.
 
+
     Thanks for playing!'
-  endingDelay: 5
+  endingDelay: 4
 --- !u!1 &150617503
 GameObject:
   m_ObjectHideFlags: 0
