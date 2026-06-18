@@ -44,5 +44,6 @@ public enum MenuStates
     MainMenu,
     PauseMenu,
     SettingsMenu,
-    CreditsMenu
+    CreditsMenu,
+    ControlsMenu
 }

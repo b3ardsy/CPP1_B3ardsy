@@ -19,8 +19,8 @@ public class PauseMenu : BaseMenu
             if (button.name.Contains("Settings"))
                 button.onClick.AddListener(() => context.JumpTo(MenuStates.SettingsMenu));
 
-            if (button.name.Contains("Credits"))
-                button.onClick.AddListener(() => context.JumpTo(MenuStates.CreditsMenu));
+            if (button.name.Contains("Controls"))
+                button.onClick.AddListener(() => context.JumpTo(MenuStates.ControlsMenu));
 
             if (button.name.Contains("Quit"))
                 button.onClick.AddListener(QuitGame);

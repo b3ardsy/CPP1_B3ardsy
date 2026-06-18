@@ -33,6 +33,7 @@ public class SettingsMenu : BaseMenu
         {
             if (button == null) continue;
             if (button.name.Contains("Credits")) button.onClick.AddListener(() => context.JumpTo(MenuStates.CreditsMenu));
+            if (button.name.Contains("Controls")) button.onClick.AddListener(() => context.JumpTo(MenuStates.ControlsMenu));
             if (button.name.Contains("Back")) button.onClick.AddListener(() => context.JumpBack());
         }
 

@@ -4020,7 +4020,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3913901384648474076}
   - component: {fileID: 5172663257243099460}
-  - component: {fileID: 2852273250308856091}
   m_Layer: 5
   m_Name: CreditsMenu
   m_TagString: Untagged
@@ -4057,20 +4056,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7906062112210908419}
   m_CullTransparentMesh: 1
---- !u!114 &2852273250308856091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7906062112210908419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeccdc5802ca7b94ea9b293b1074b572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CreditsMenu
-  allButtons: []
-  state: 0
 --- !u!1 &8243485672258800748
 GameObject:
   m_ObjectHideFlags: 0

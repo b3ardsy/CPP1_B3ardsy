@@ -28,7 +28,7 @@ public class InGameHUD : MonoBehaviour
             playerStats = FindAnyObjectByType<PlayerStats>();
 
         if (playerStats != null)
-            playerStats.OnAlertRequested += ShowAlert;
+            playerStats.OnAlertRequested += ShowTimedAlert;
 
         if (alertText != null)
             alertText.gameObject.SetActive(false);
@@ -39,7 +39,7 @@ public class InGameHUD : MonoBehaviour
     void OnDestroy()
     {
         if (playerStats != null)
-            playerStats.OnAlertRequested -= ShowAlert;
+            playerStats.OnAlertRequested -= ShowTimedAlert;
     }
 
     void Update()
@@ -70,7 +70,7 @@ public class InGameHUD : MonoBehaviour
             iceArrowImage.gameObject.SetActive(playerStats.EquippedSpecialArrow == SpecialArrowType.Ice);
     }
 
-    private void ShowAlert(string message)
+    private void ShowTimedAlert(string message)
     {
         if (alertText == null)
             return;
@@ -79,6 +79,32 @@ public class InGameHUD : MonoBehaviour
             StopCoroutine(alertCoroutine);
 
         alertCoroutine = StartCoroutine(AlertRoutine(message));
+    }
+
+    public void ShowPersistentAlert(string message)
+    {
+        if (alertText == null)
+            return;
+
+        if (alertCoroutine != null)
+        {
+            StopCoroutine(alertCoroutine);
+            alertCoroutine = null;
+        }
+
+        alertText.text = message;
+        alertText.gameObject.SetActive(true);
+    }
+
+    public void ClearPersistentAlert()
+    {
+        if (alertText == null)
+            return;
+
+        if (alertCoroutine != null)
+            return;
+
+        alertText.gameObject.SetActive(false);
     }
 
     private IEnumerator AlertRoutine(string message)
