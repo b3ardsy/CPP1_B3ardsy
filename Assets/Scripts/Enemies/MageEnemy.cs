@@ -27,6 +27,22 @@ public class MageEnemy : BaseEnemy
         rb.linearVelocity = new Vector2(0f, rb.linearVelocityY);
     }
 
+    protected override void PlayHitSFX()
+    {
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayMageHit();
+        }
+    }
+
+    protected override void PlayDeathSFX()
+    {
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayMageDeath();
+        }
+    }
+
     public void DestroyMage()
     {
         DestroyEnemy();

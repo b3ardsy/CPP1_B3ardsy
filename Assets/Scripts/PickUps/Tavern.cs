@@ -12,7 +12,7 @@ public class Tavern : MonoBehaviour
     [TextArea]
     [SerializeField]
     private string completedMessage =
-        "Closed due to scope creep.\nThanks for playing!";
+        "We're sorry. The Tavern is closed due to scope creep.\nThanks for playing!";
 
     [Header("Ending")]
     [SerializeField] private float endingDelay = 5f;

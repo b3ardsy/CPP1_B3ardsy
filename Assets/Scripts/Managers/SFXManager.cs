@@ -9,6 +9,14 @@ public class SFXManager : MonoBehaviour
     [SerializeField] private AudioClip playerDeath;
     [SerializeField] private AudioClip playerHit;
 
+    [Header("Walker Enemy SFX")]
+    [SerializeField] private AudioClip walkerHit;
+    [SerializeField] private AudioClip walkerDeath;
+
+    [Header("Mage Enemy SFX")]
+    [SerializeField] private AudioClip mageHit;
+    [SerializeField] private AudioClip mageDeath;
+
     [Header("Enemy SFX")]
     [SerializeField] private AudioClip enemyFireball;
 
@@ -41,6 +49,26 @@ public class SFXManager : MonoBehaviour
     public void PlayPlayerHit()
     {
         PlayClip(playerHit);
+    }
+
+    public void PlayWalkerHit()
+    {
+        PlayClip(walkerHit);
+    }
+
+    public void PlayWalkerDeath()
+    {
+        PlayClip(walkerDeath);
+    }
+
+    public void PlayMageHit()
+    {
+        PlayClip(mageHit);
+    }
+
+    public void PlayMageDeath()
+    {
+        PlayClip(mageDeath);
     }
 
     public void PlayEnemyFireball()

@@ -91,4 +91,20 @@ public class WalkerEnemy : BaseEnemy
     {
         sr.flipX = !sr.flipX;
     }
+
+    protected override void PlayHitSFX()
+    {
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayWalkerHit();
+        }
+    }
+
+    protected override void PlayDeathSFX()
+    {
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayWalkerDeath();
+        }
+    }
 }

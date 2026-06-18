@@ -47,10 +47,12 @@ public abstract class BaseEnemy : MonoBehaviour
 
         if (health <= 0)
         {
+            PlayDeathSFX();
             Die();
         }
         else
         {
+            PlayHitSFX();
             anim.SetTrigger("Hit");
         }
     }
@@ -88,6 +90,16 @@ public abstract class BaseEnemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    protected virtual void PlayHitSFX()
+    {
+        // Child enemies can override this
+    }
+
+    protected virtual void PlayDeathSFX()
+    {
+        // Child enemies can override this
     }
 
     private void DropOrbs()
