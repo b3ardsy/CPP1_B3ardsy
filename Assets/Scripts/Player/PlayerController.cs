@@ -32,12 +32,20 @@ public class PlayerController : MonoBehaviour
     [Header("Ladder")]
     [SerializeField] private float climbSpeed = 5f;
 
+    [Header("Knockback")]
+    [SerializeField] private float knockbackForceX = 10f;
+    [SerializeField] private float knockbackForceY = 6f;
+    [SerializeField] private float knockbackDuration = 0.2f;
+
     #endregion
 
     #region State Variables
 
     private bool isRolling;
     private float rollTimer;
+
+    private bool isKnockedBack;
+    private float knockbackTimer;
 
     private Vector2 standingColliderSize;
     private Vector2 standingColliderOffset;
@@ -109,6 +117,8 @@ public class PlayerController : MonoBehaviour
     {
         if (GameManager.Instance != null && GameManager.Instance.IsPaused)
             return;
+
+        HandleKnockback();
 
         ReadInput();
         UpdateJumpTimers();
@@ -207,6 +217,9 @@ public class PlayerController : MonoBehaviour
 
     private void GroundMovement()
     {
+        if (isKnockedBack)
+            return;
+
         if (isRolling)
             return;
 
@@ -228,6 +241,9 @@ public class PlayerController : MonoBehaviour
 
     private void LadderMovement()
     {
+        if (isKnockedBack)
+            return;
+
         if (isRolling)
             return;
 
@@ -241,6 +257,9 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        if (isKnockedBack)
+            return;
+
         if (isRolling)
             return;
 
@@ -275,7 +294,7 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyJumpGravity()
     {
-        if (isRolling || isOnLadder)
+        if (isKnockedBack || isRolling || isOnLadder)
             return;
 
         if (rb.linearVelocityY < 0)
@@ -290,6 +309,9 @@ public class PlayerController : MonoBehaviour
 
     private void SpriteFlipping()
     {
+        if (isKnockedBack)
+            return;
+
         if (isRolling)
             return;
 
@@ -301,6 +323,9 @@ public class PlayerController : MonoBehaviour
 
     private void FireAttack()
     {
+        if (isKnockedBack)
+            return;
+
         if (isRolling)
             return;
 
@@ -317,6 +342,9 @@ public class PlayerController : MonoBehaviour
 
     private void Roll()
     {
+        if (isKnockedBack)
+            return;
+
         if (!stats.HasRoll)
             return;
 
@@ -350,6 +378,19 @@ public class PlayerController : MonoBehaviour
             col.offset = rollingColliderOffset;
 
             anim.SetTrigger("Roll");
+        }
+    }
+
+    private void HandleKnockback()
+    {
+        if (!isKnockedBack)
+            return;
+
+        knockbackTimer -= Time.deltaTime;
+
+        if (knockbackTimer <= 0f)
+        {
+            isKnockedBack = false;
         }
     }
 
@@ -405,7 +446,35 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        TakeDamage(damage, Vector2.zero);
+    }
+
+    public void TakeDamage(int damage, Vector2 knockbackDirection)
+    {
         stats.TakeDamage(damage);
+
+        isKnockedBack = true;
+        knockbackTimer = knockbackDuration;
+
+        if (isRolling)
+        {
+            isRolling = false;
+            col.size = standingColliderSize;
+            col.offset = standingColliderOffset;
+        }
+
+        if (isOnLadder)
+        {
+            isOnLadder = false;
+            rb.gravityScale = startingGravity;
+        }
+
+        rb.linearVelocity = Vector2.zero;
+
+        rb.AddForce(
+            new Vector2(knockbackDirection.x * knockbackForceX, knockbackForceY),
+            ForceMode2D.Impulse
+        );
 
         if (stats.IsDead())
         {
